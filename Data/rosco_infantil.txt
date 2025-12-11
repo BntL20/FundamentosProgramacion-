@@ -1,0 +1,26 @@
+A;Ave grande que no puede volar;Avestruz
+B;Vehículo con dos ruedas que usan muchos niños;Bicicleta
+C;Lugar donde van los niños a estudiar;Colegio
+D;Raza de perro con manchas negras;Dálmata
+E;Animal grande con trompa;Elefante
+F;Planta con pétalos de muchos colores;Flor
+G;Animal doméstico que maúlla;Gato
+H;Lugar donde duermen los viajeros en vacaciones;Hotel
+I;País con forma de bota;Italia
+J;Pájaro pequeño que canta muy bonito;Jilguero
+K;Animal australiano que vive en los árboles;Koala
+L;Bebida blanca que viene de la vaca;Leche
+M;Lugar en el que hay muchas montañas y naturaleza;Montaña
+N;Animal marino que tiene un cuerno largo;Narval
+O;Árbol del que salen las aceitunas;Olivo
+P;Objeto que sirve para escribir;Pluma
+Q;Comida hecha con leche, puede ser fresca o curada;Queso
+R;Color de las fresas maduras;Rojo
+S;Animal largo que se arrastra por el suelo;Serpiente
+T;Juguete que gira si lo lanzas con fuerza;Trompo
+U;Última letra de la palabra “luz”;U
+V;Color que sale de mezclar rojo y azul;Violeta
+W;Palabra inglesa que significa “ventana”;Window
+X;Instrumento musical de tablillas metálicas;Xilófono
+Y;Letra que también se llama “ye”;Y
+Z;Animal con rayas blancas y negras parecido a un caballo;Zebra

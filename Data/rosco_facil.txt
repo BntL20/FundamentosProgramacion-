@@ -1,0 +1,26 @@
+A;Continente donde viven los canguros y los koalas;Australia
+B;Capital de Brasil;Brasilia
+C;Órgano del cuerpo que bombea la sangre;Corazón
+D;Planeta enano del sistema solar que antes era considerado el noveno planeta;Plutón
+E;País europeo cuya capital es Madrid;España
+F;Deporte practicado por Lionel Messi y Neymar;Fútbol
+G;Animal conocido como el “rey de la selva”;León
+I;País con forma de bota en el mapa;Italia
+J;Fruta amarilla larga que les encanta a los Minions;Plátano
+K;Personaje de Star Wars pequeño, verde y sabio que dice “Hacer o no hacer… no hay intento”;Yoda
+L;Idioma oficial de Brasil;Portugués
+M;Planeta rojo del sistema solar;Marte
+N;País nórdico famoso por los vikingos;Noruega
+Ñ;Ave grande americana, parecida al avestruz, que vive en las pampas argentinas;Ñandú
+O;Metal precioso amarillo usado en anillos y collares;Oro
+P;Capital de Francia;París
+Q;Queso en inglés;Cheese
+R;Río más largo de América del Sur;Amazonas
+S;Estrella más cercana a la Tierra;Sol
+T;País asiático donde está la Gran Muralla China;China
+U;Único planeta del sistema solar que empieza por U;Urano
+V;Instrumento de cuerda que tiene 4 cuerdas y suena hawaiano;Ukelele
+W;Personaje robot de Pixar que limpia la Tierra y dice su propio nombre;Wall-E
+X;Instrumento musical de láminas de madera que suena “clin clin”;Xilófono
+Y;Elemento químico cuyo símbolo es simplemente la letra Y;Yodo
+Z;Animal africano rayado en blanco y negro que parece un caballo con pijama;Cebra
