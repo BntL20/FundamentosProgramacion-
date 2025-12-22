@@ -1,26 +1,130 @@
-A;Ave grande que no puede volar;Avestruz
-B;Vehículo con dos ruedas que usan muchos niños;Bicicleta
-C;Lugar donde van los niños a estudiar;Colegio
-D;Raza de perro con manchas negras;Dálmata
-E;Animal grande con trompa;Elefante
-F;Planta con pétalos de muchos colores;Flor
-G;Animal doméstico que maúlla;Gato
-H;Lugar donde duermen los viajeros en vacaciones;Hotel
-I;País con forma de bota;Italia
-J;Pájaro pequeño que canta muy bonito;Jilguero
-K;Animal australiano que vive en los árboles;Koala
-L;Bebida blanca que viene de la vaca;Leche
-M;Lugar en el que hay muchas montañas y naturaleza;Montaña
-N;Animal marino que tiene un cuerno largo;Narval
-O;Árbol del que salen las aceitunas;Olivo
-P;Objeto que sirve para escribir;Pluma
-Q;Comida hecha con leche, puede ser fresca o curada;Queso
-R;Color de las fresas maduras;Rojo
-S;Animal largo que se arrastra por el suelo;Serpiente
-T;Juguete que gira si lo lanzas con fuerza;Trompo
-U;Última letra de la palabra “luz”;U
-V;Color que sale de mezclar rojo y azul;Violeta
-W;Palabra inglesa que significa “ventana”;Window
-X;Instrumento musical de tablillas metálicas;Xilófono
-Y;Letra que también se llama “ye”;Y
-Z;Animal con rayas blancas y negras parecido a un caballo;Zebra
+A;Animal que vuela y canta por la mañana;Ave
+A;Fruta amarilla y alargada que se pela;Ananá
+A;Color del mar y del cielo;Azul
+A;Carbohidrato que se encuentra en la paella;Arroz
+A;Objeto que se usa para escuchar música en los oídos;Auriculares
+B;Objeto para beber agua;Botella
+B;Comida redonda que se come con salsa;Bocadillo
+B;Animal que vuela de noche y duerme de día;Búho
+B;Fruta curva y amarilla;Banana
+B;Vehículo grande para muchos pasajeros;Bus
+C;Animal que corre rápido y tiene joroba;Camello
+C;Casa de un rey;Castillo
+C;Fruta roja con pepitas; Cereza
+C;Color como el chocolate, parecido al marrón;Café
+C;Animal que canta "cucú";Cuco
+D;Parte del cuerpo para masticar;Diente
+D;Número después del nueve;Diez
+D;Fruta dulce y amarilla como una pera;Dátil
+D;Cubo que tiene 6 lados y se utiliza en juegos de mesa;Dado
+D;Número que sigue después del 9;Diez
+E;Animal grande con trompa y orejas grandes;Elefante
+E;Cosa que brilla en el cielo de noche;Estrella
+E;Parte del cuerpo para digerir comida;Estómago
+E;Objeto para subir pisos;Escalera
+E;País donde está el estadio Bernabéu;España.
+F;Cosa que se enciende y da luz;Foco
+F;Fruta roja con forma de corazón;Fresa
+F;Elemento natural que quema;Fuego
+F;Deporte con pelota y goles;Fútbol
+G;Animal que maúlla y caza ratones;Gato
+G;Objeto para ver lejos;Gafas
+G;Cosa que se infla y es redonda;Globo
+G;Persona grande como un monstruo;Gigante
+H;Objeto para cortar madera;Hacha
+H;Comida fría y dulce;Helado
+H;Cosa que crece en el jardín y es verde;Hierba
+H;Hueso del brazo;Húmero
+I;Edificio para rezar;Iglesia
+I;Idioma como el inglés;Inglés
+I;Cosa que atrae metal;Imán
+I;Animal como un lagarto pero más grande;Iguana
+I;Forma de hablar en otro país;Idioma
+J;Animal alto con cuello largo;Jirafa
+J;Cosa para jugar con amigos;Juguete
+J;Comida dulce como mermelada;Jalea
+J;Bebida de frutas;Jugo
+J;Objeto para lavar platos;Jabón
+K;Animal que salta y vive en Australia;Kanguro
+K;Fruta verde y peluda;Kiwi
+K;Deporte que se usa para la defensa personal;Karate
+K;Cosa para comer con salsa;Kétchup
+K;Animal como un oso pero blanco;Koala
+L;Animal que aúlla en la luna;Lobo
+L;Objeto para leer;Libro
+L;Fruta amarilla y ácida;Limon
+L;Parte del cuerpo para hablar;Lengua
+L;Cosa que brilla en el cielo;Luna
+M;Fruta roja o verde que crece en los arboles;Manzana
+M;Objeto para medir longitud;Metro
+M;Cosa dulce como el azúcar;Miel
+M;Animal que vuela y es colorido;Mariposa
+M;Lugar grande como el océano;Mar
+N;Cosa blanca en el cielo;Nube
+N;Parte del cuerpo para oler;Nariz
+N;Fruta anaranjada;Naranja
+N;Número después del ocho;Nueve
+N;Lugar para vivir de los pájaros;Nido
+Ñ;Animal como un toro pero salvaje;Ñu
+Ñ;plato tradicional italiano que se elabora con patata, harina y huevo;Ñoquis
+Ñ;Amigo del chavo del ocho;Ñoño
+Ñ(contiene Ñ);Antonimo de niña;Niño
+Ñ(contiene Ñ);Fruta amarilla y dulce, se encuentra en la Pizza hawaiana;Piña
+O;Parte del cuerpo para oír;Oído
+O;Animal que hiberna;Oso
+O;Lo que robaron los españoles en las conquistas;Oro
+O;Lugar grande de agua;Océano
+O;Forma de onda en el mar;Ola
+P;Animal que vuela y tiene colores;Pájaro
+P;Fruta amarilla como una manzana;Pera
+P;Cosa para comer con tenedor, los Italianos comen mucho de eso;Pasta
+P;Animal con aletas y escamas;Pez
+P;Parte del cuerpo para caminar;Pie
+Q;Comida amarilla y derretida;Queso
+Q;Palabra de pregunta para dirigirse a una persona;Quién
+Q;Juego con preguntas;Quiz
+R;Animal pequeño que roba queso;Ratón
+R;Color como la sangre;Rojo
+R;Cosa que croa en el estanque;Rana
+R;Forma de expresar alegría/felicidad;Risa
+R;Árbol que da flores;Rosa
+S;Animal que sisea y se arrastra;Serpiente
+S;Cosa amarilla en el cielo;Sol
+S;Fruta verde por fuera, roja por dentro;Sandía
+S;Accion que hace una persona con la boca para hacer un silbido;Silbar
+S;Animal que brinca y es verde;Sapo
+T;Animal grande con cuernos;Toro
+T;Objeto para beber té;Taza
+T;Fruta roja y jugosa;Tomate
+T;Animal con caparazón;Tortuga
+T;Lugar para vivir;Tienda
+U;Fruta morada en racimo;Uva
+U;Parte del cuerpo para cortar;Uña
+U;Cosa para proteger de la lluvia (en ingles);Umbrella
+U;Primer numero de los numeros naturales;Uno
+U;Lugar lejano como una estrella;Universo
+U;Fruta que se come en año nuevo;Uva
+V;Animal que da leche y tiene cuernos;Vaca
+V;Color como las plantas;Verde
+V;Cosa que sopla;Viento
+V;Animal que vuela rápido;Vencejo
+V;Forma de ir rápido;Velocidad? V;Casa para vacaciones;Villa
+W;Villano de Batman;Wason
+W;Sistema de conexión inalámbrica que da internet;Wifi
+W;Bebida escocesa que contiene alcohol;Whisky
+W;Lugar como Nueva York pero con W;Washington
+W;Applicación que se utiliza para comunicarse;Whatsapp
+X;Instrumento musical como un piano pero pequeño;Xilófono
+X;Cosa para rayos en el hospital (en ingles);X-ray
+X;Número romano para 10;X
+X;Lugar en China;Xian
+X;Variable matemática;X
+Y;Comida blanca o con sabor y cremosa ;Yogur
+Y;Web/App que se usa para ver y subir videos;Youtube
+Y;Bebida de hierbas;Yerba
+Z;Animal rayado y negro con blanco;Zebra
+Z;Calzado para los pies;Zapato
+Z;Animal que vuela y pica;Zancudo
+Z;Paso largo que se da con movimiento acelerado o por tener las piernas largas;Zancada
+Z;Lugar para animales;Zoológico
+Z;Animal astuto;Zorro
