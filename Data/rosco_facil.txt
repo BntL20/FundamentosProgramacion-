@@ -1,26 +1,104 @@
+A;Fruta azul;Arándano
+A;Prenda ropa que te protege del frío;Abrigo
+A;Lugar donde viven los peces;Acuario
 A;Continente donde viven los canguros y los koalas;Australia
+B;Color azul en inglés;Blue
+B;Pan pequeño redondo;Bollo
+B;Objeto para escribir con tinta;Bolígrafo
 B;Capital de Brasil;Brasilia
+C;Lugar donde estudian los niños;Colegio
+C;Bebida caliente por la mañana;Café
+C;Animal que sube montañas;Cabra montesa
 C;Órgano del cuerpo que bombea la sangre;Corazón
-D;Planeta enano del sistema solar que antes era considerado el noveno planeta;Plutón
+D;Día que va después del sábado;Domingo
+D;Animal que dice “quack” en inglés;Duck
+D;Parte del cuerpo para comer;Diente
+D;Moneda de los Estados Unidos;Dólar
+E;Animal muy grande de color gris;Elefante
+E;Lo contrario a amigo;Enemigo
+E;Aparato para subir pisos;Elevador
 E;País europeo cuya capital es Madrid;España
+F;Lo contrario de caliente;Frío
+F;Ecuación matemática;Fórmula
+F;Pais donde se encuentra la Torre Eiffel;Francia
 F;Deporte practicado por Lionel Messi y Neymar;Fútbol
-G;Animal conocido como el “rey de la selva”;León
-I;País con forma de bota en el mapa;Italia
-J;Fruta amarilla larga que les encanta a los Minions;Plátano
-K;Personaje de Star Wars pequeño, verde y sabio que dice “Hacer o no hacer… no hay intento”;Yoda
-L;Idioma oficial de Brasil;Portugués
+G;Animal que dice “miau”;Gato
+G;Objeto de gran tamaño;Grande
+G;Persona que gobierna un país;Governante
+G;Persona que vence en una competición;Ganador
+H;Se dice al llegar a un sitio;Hola
+H;Pieza de metal que se clava en los cascos de los caballos;Herradura
+H;Persona de tu familia;Hermano
+H;Medida que indica tiempo;Hora
+I;País con forma de bota;Italia
+I;Idioma hablado en Estados Unidos;Inglés
+I;Lo contrario de exterior;Interior
+I;Fuego a gran escala;Incendio
+J;Mes del verano;Julio
+J;Palabras específicas de un área;Jerga
+J;Comida española;Jamón
+J;Juego de mesa que hay que apilar bloques de madera;Jenga
+K;Deporte de lucha japonesa;Kárate
+K;1000 gramos;Kilogramo
+K;Arte marcial japonés;Kendo
+K;Prenda que se utiliza para realizar artes marciales;Kimono
+L; Animal rey de la selva;León
+L; Sinónimo de mortal;Letal
+L; Bebida de limón;Limonada
+L;Capital de Perú;Lima
+M; Ser cada vez mejor en algo;Mejorar
+M; Pequeño;Menor
+M; Prenda para las manos en invierno;Manoplas
 M;Planeta rojo del sistema solar;Marte
+N;Parte de la cara para oler;Nariz
+N;Color del cielo de noche;Negro
+N;Persona con una edad de 3 a 14 años;Niño
 N;País nórdico famoso por los vikingos;Noruega
-Ñ;Ave grande americana, parecida al avestruz, que vive en las pampas argentinas;Ñandú
-O;Metal precioso amarillo usado en anillos y collares;Oro
-P;Capital de Francia;París
-Q;Queso en inglés;Cheese
-R;Río más largo de América del Sur;Amazonas
-S;Estrella más cercana a la Tierra;Sol
-T;País asiático donde está la Gran Muralla China;China
-U;Único planeta del sistema solar que empieza por U;Urano
-V;Instrumento de cuerda que tiene 4 cuerdas y suena hawaiano;Ukelele
-W;Personaje robot de Pixar que limpia la Tierra y dice su propio nombre;Wall-E
-X;Instrumento musical de láminas de madera que suena “clin clin”;Xilófono
-Y;Elemento químico cuyo símbolo es simplemente la letra Y;Yodo
-Z;Animal africano rayado en blanco y negro que parece un caballo con pijama;Cebra
+O;Animal que da lana;Oveja
+O;Lo que se percibe con el olfato;Olor
+O;Forma de circulo alargado;Ovalo
+O;Principio de algo;Origen
+P;De tamaño reducido;Pequeño
+P;Animal que vive en el mar y tiene tentáculos;Pulpo
+P;Fruta amarilla con pinchos;Piña
+P;Ave que representa la paz;Paloma
+Q;Alimento que comen los ratones;Queso
+Q;Comida que se derrite en la pizza;Queso
+Q;Posición número 5;Quinto
+Q;Ciencia que estudia la materia;Química
+R;Color de la sangre;Rojo
+R; Animal que come queso;Ratón
+R;Sinónimo de extraño;Objet Raro
+R;Animal verde que salta y vive cerca del agua;Rana
+S;Astro que nos da luz;Sol
+S;Día de fin de semana;Sábado
+S;Condimento que da sabor a la comida;Sal
+S;Enfermedad que provoca marcas rojas en la piel;Sarampión
+T;Aparato para ver la televisión;Televisor
+T;Bebida que se toma caliente;Té
+T;Elemento de un parque infantil;Tobogán
+T;Objeto para escribir en la  pizarra;Tiza
+U;Fruta pequeña morada;Uva
+U;Mismo valor a 1;Unidad
+U;Cuando dos elementos se unen;Unión
+U;Ropa especial que usan en el colegio;Uniforme
+V; Bebida de color rojo; Vino
+V; Agujero en la pared con cristal; Ventana
+V; Recipiente para beber; Vaso
+V;Cilindro de cera que da luz al encenderse;Vela
+W;Bruja en inglés;Witch
+W;Bebida alcohólica inglesa;Whisky
+W;Personaje de Disney que es un oso amarillo que come miel;Winnie the pooh
+W;Tecnología que permite conectarse a Internet sin cables;Wifi
+X;Instrumento musical con teclas de metal;Xilófono
+X;Letra que indica error;X
+X;Miedo o rechazo a personas inmigrantes;Xenofobia
+X;Forma de decir besos y abrazos en inglés;XOXO
+Y;Palabra para nombrarse a sí mismo;Yo
+Y;Si en inglés;Yes
+Y;Barco lujoso;Yate
+Y;Hembra del caballo;Yegua
+Z;Lo que se lleva en los pies;Zapatos
+Z;Hortaliza de color naranja;Zanahoria
+Z;Calzado deportivo;Zapatilla
+Z;Jugo de fruta;Zumo
