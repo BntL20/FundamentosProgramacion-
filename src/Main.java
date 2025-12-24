@@ -1,4 +1,9 @@
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,17 +16,41 @@ public class Main {
 
     }
 
-
-    //RECORRE TODO EL ROSCO PA SABER SI HAY PASAPALBRAS O NO
-    public static boolean hayPasapalabras(String[][] rosco) {
-        for (int i = 0; i < 26; i++) {
-            if (rosco[i][3].equals("3")) {
-                return true;
-            }
-        }
-        return false;
+    //PERSONA 3
+    //REGISTRO DE USUARIOS
+    public static Usuario registrarUsuario(){
+    return null;
     }
 
+    //PERSONA 2
+    //ELECCIÓN DE NIVEL
+    public static String elegirNivel(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Elige nivel: infantil / facil / medio / avanzado");
+        return sc.nextLine().toLowerCase();
+    }
+
+    public static String obtenerFicheroNivel(String nivel) {
+        nivel = nivel.toLowerCase();
+
+        if (nivel.equals("infantil")) {
+            return "rosco_infantil.txt";
+        } else if (nivel.equals("facil")) {
+            return "rosco_facil.txt";
+        } else if (nivel.equals("medio")) {
+            return "rosco_medio.txt";
+        } else {
+            return "rosco_avanzado.txt";
+        }
+    }
+
+    //PERSONA 1
+    //CARGAR DATOS
+    public static String[][] cargarDatos(String nombreFichero){
+        return null;
+    }
+
+    //PERSONA 2
     //LOGICA DEL JUEGO
     public static void jugarRosco(String[][] rosco) {
         Scanner sc = new Scanner(System.in);
@@ -73,6 +102,16 @@ public class Main {
         }
     }
 
+    //RECORRE TODO EL ROSCO PA SABER SI HAY PASAPALABRA O NO
+    public static boolean hayPasapalabras(String[][] rosco) {
+        for (int i = 0; i < 26; i++) {
+            if (rosco[i][3].equals("3")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     //UN PRINT DE LOS RESULTADOS
     public static void mostrarResultados(String[][] rosco){
         int aciertos = 0;
@@ -93,6 +132,12 @@ public class Main {
         System.out.println("Aciertos: " + aciertos);
         System.out.println("Fallos: " + fallos);
         System.out.println("Pasapalabras:" +pasapalabras);
+    }
+
+    //PERSONA 1
+    //GUARDAR PARTIDA
+    public static void guardarDatosPartida(){
+
     }
 }
 
