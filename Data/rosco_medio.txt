@@ -1,0 +1,107 @@
+A;Acción de ayudar sin esperar nada a cambio;Altruismo
+A;Persona que siente afición por algo;Aficionado
+A;Capacidad de aprender con rapidez;Agilidad
+A;Conjunto de conocimientos sobre un tema;Aprendizaje
+B;Recipiente grande para líquidos;Barril
+B;Golpe dado con la mano;Bofetada
+B;Conjunto de cosas mezcladas sin orden;Batiburrillo
+B;Actividad física realizada en grupo;Balonmano
+C;Capacidad de comprender y compartir sentimientos;Compasión
+C;Conjunto de personas que conviven;Comunidad
+C;Acción de corregir un error;Corrección
+C;Acción de dar forma a algo con cuidado;Confección
+D;Falta de orden o limpieza;Desorden
+D;Capacidad de decidir por uno mismo;Determinación
+D;Tiempo destinado al descanso;Descanso
+D;Conjunto de acciones planeadas para lograr un objetivo;Diseño
+E;Acción de elegir entre varias opciones;Elección
+E;Suceso inesperado;Evento
+E;Acción de expresar una idea;Exposición
+E;Elemento que se añade para mejorar algo;Elemento
+F;Engaño o mentira con apariencia de verdad;Farsa
+F;Falta de energía o ánimo;Fatiga
+F;Cualidad de lo que no es firme;Fragilidad
+F;Expresión de enojo o protesta;Furor
+G;Conjunto de normas que rigen una actividad;Guía
+G;Acción de gruñir;Gruñido
+G;Acción de guardar algo para el futuro;Guardado
+G;Cualidad de quien actúa con generosidad;Generosidad
+H;Costumbre o práctica habitual;Hábito
+H;Cualidad de quien actúa con honradez;Honestidad
+H;Acción de ayudar de forma desinteresada;Hospitalidad
+H;Parte de un todo que sobresale;Hendidura
+I;Capacidad de imaginar cosas inexistentes;Imaginación
+I;Acción de impedir que algo ocurra;Interrupción
+I;Falta de información sobre algo;Ignorancia
+I;Capacidad de adaptarse a nuevas circunstancias;Ingenio
+J;Persona que trabaja impartiendo justicia;Juez
+J;Conjunto de personas que trabajan juntas;Junta
+J;Acción de justificar una conducta;Justificación
+J;Persona que monta a caballo;Jinete
+K;Arte marcial de origen japonés;Kendo
+K;Arte marcial de origen coreano;Kárate
+K;Unidad de medida informática;Kilobyte
+K;Unidad de medida de energía;Kilojulio
+L;Lugar destinado a la lectura pública;Librería
+L;Acción de leer atentamente;Lectura
+L;Capacidad de liderazgo;Liderazgo
+L;Acción de hacer un lazo;Lazar
+M;Estado de calma y serenidad;Mesura
+M;Movimiento repetido y constante;Monotonía
+M;Acción de modificar algo;Modificación
+M;Acción de mejorar o perfeccionar algo;Mejora
+N;Acción de nombrar a alguien para un cargo;Nombramiento
+N;Acción de negar algo;Negativa
+N;Capacidad de cambiar de opinión;Negociación
+N;Conjunto de reglas que regulan una actividad;Normativa
+Ñ;Animal africano parecido a un antílope;Ñu
+Ñ;Expresión de desprecio o burla;Ñoño
+Ñ;Sonido que expresa disgusto;Ñeñe
+Ñ;Acción de hacer algo con exageración;Ñoñez
+O;Acción de observar con detenimiento;Observación
+O;Acción de obtener algo deseado;Obtención
+O;Acción de organizar algo cuidadosamente;Ordenamiento
+O;Persona que organiza y dirige un grupo;Organizador
+P;Conjunto de hojas escritas o impresas;Publicación
+P;Acción de posponer algo;Postergación
+P;Acción de proteger a alguien;Protección
+P;Acción de prever un riesgo;Precaución
+Q;Petición o reclamación formal;Queja
+Q;Ruido bajo y continuo;Quejumbre
+Q;Queja expresada de forma insistente;Quejadera
+Q;Cosa que causa satisfacción;Querencia
+R;Capacidad de reaccionar ante dificultades;Recursos
+R;Capacidad de soportar dificultades;Resistencia
+R;Capacidad de adaptarse a dificultades;Recuperación
+R;Lugar donde se guardan objetos;Recinto
+S;Acción de dividir en partes;Segmentación
+S;Acción de separar con cuidado;Segmento
+S;Acción de sorprender;Sorpresa
+S;Acción de separar o dividir;Segmentación
+T;Lugar donde se representan obras;Teatro
+T;Cambio notable en una situación;Transformación
+T;Acción de transmitir información;Transmisión
+T;Persona que investiga en ciencia;Técnico
+U;Acción de emplear algo correctamente;Utilización
+U;Hecho poco frecuente;Unicidad
+U;Cualidad de lo que es útil;Utilidad
+U;Acción de unir cosas o personas;Unión
+V;Capacidad de adaptarse a cambios;Versatilidad
+V;Cambio o alteración en algo;Variación
+V;Capacidad de superar obstáculos;Valía
+V;Adjetivo que indica validez;Válido
+W;Sistema de conexión inalámbrica a internet;Wifi
+W;Unidad de trabajo en informática;Workgroup
+W;Deporte acuático con tabla y vela;Windsurf
+W;Página web colaborativa;Wiki
+X;Instrumento musical de placas;Xilófono
+X;Madera aromática usada en perfumería;Xilácea
+X;Sustancia medicinal obtenida de plantas;Xarope
+Y;Objeto que sirve para unir o girar piezas;Yugo
+Y;Acción de yacer o estar tendido;Yacencia
+Y;Pieza que sirve para uncir animales;Yugo
+Y;Persona que guía a animales de carga;Yuntero
+Z;Movimiento rápido en forma de zigzag;Zigzag
+Z;Lugar donde residen animales;Zoológico
+Z;Acción de moverse rápidamente de un lado a otro;Zarandeo
+Z;Movimiento rápido de un objeto;Zancada

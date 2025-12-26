@@ -1,0 +1,108 @@
+A;Capacidad de anticipar lo que puede ocurrir;Adivinación
+A;Doctrina filosófica que niega la existencia de valores absolutos;Axiología
+A;Capacidad de actuar con autonomía;Autonomía
+A;Capacidad de adaptarse a distintas situaciones;Adaptabilidad
+B;Documento antiguo escrito sobre piel;Beato
+B;Persona que tiene dos cabezas, real o mitológicamente;Bicéfalo
+B;Documento oficial sellado por el Papa;Bula
+B;Ruido confuso producido por muchas voces;Barullo
+C;Ciencia que estudia los mapas;Cartografía
+C;Relato mítico sobre el origen del universo;Cosmogonía
+C;Acción de censurar o reprobar públicamente;Censura
+C;Acción de reunir cosas dispersas;Compilación
+D;Acción de desviar algo de su curso normal;Desvío
+D;Método de razonamiento basado en el diálogo y la contradicción;Dialéctica
+D;Pérdida grave o ruina económica;Debacle
+D;Persona que destaca por su sabiduría;Doctor
+E;Estado de agitación o alboroto colectivo;Efervescencia
+E;Palabra que suaviza una expresión dura o negativa;Eufemismo
+E;Cualidad de quien actúa con justicia;Equidad
+E;Hecho que sirve como ejemplo;Ejemplaridad
+F;Exceso de entusiasmo por algo;Fanatismo
+F;Razonamiento falso que aparenta ser verdadero;Falacia
+F;Facultad de elegir entre varias opciones;Facultad
+F;Carácter efímero o pasajero de algo;Fugacidad
+G;Narración exagerada o poco creíble;Grandilocuencia
+G;Rama de la filosofía que estudia el conocimiento;Gnoseología
+G;Acción de gobernar o dirigir;Gestión
+G;Conjunto de hechos históricos;Gesta
+H;Persona que muestra rechazo a los avances;Hostil
+H;Capacidad de comprender rápidamente;Habilidad
+H;Disciplina dedicada a la interpretación de textos;Hermenéutica
+H;Actitud de humildad excesiva;Humillante
+I;Falta de atención o descuido;Inadvertencia
+I;Cualidad de lo que es inherente a la naturaleza de algo;Inmanencia
+I;Falta de exactitud o rigor;Imprecisión
+I;Cualidad de lo que no se altera fácilmente;Inmutabilidad
+J;Persona que trabaja la madera;Jornalero
+J;Conjunto de sentencias que sirven de precedente legal;Jurisprudencia
+J;Conjunto de normas que rigen una comunidad;Jurisdicción
+J;Conjunto de conocimientos sobre leyes;Jurisprudencia
+K;Conjunto de reglas morales del budismo;Karma
+K;Movimiento artístico o literario inspirado en Kafka;Kafkaísmo
+K;Lengua común surgida de varios dialectos;Koiné
+K;Pequeña embarcación esquimal;Kayak
+L;Capacidad de expresarse con claridad;Locuacidad
+L;Brevedad extrema en el uso del lenguaje;Laconismo
+L;Suceso o hecho significativo;Lance
+L;Capacidad de expresarse con corrección;Locuacidad
+M;Capacidad de retener información;Memoria
+M;Figura retórica que sustituye un término por otro relacionado;Metonimia
+M;Relato fantástico o tradicional;Mito
+M;Falta leve cometida sin mala intención;Mancilla
+N;Acción de negar repetidamente;Negación
+N;Palabra o expresión de nueva creación;Neologismo
+N;Persona experta en un tema;Notable
+N;Relación entre causa y efecto;Nexo
+Ñ;Ser sumamente apocado y de corto ingenio;Ñoño
+Ñ;Cualidad de lo excesivamente simple o infantil;Ñoñez
+Ñ;Antílope africano;Ñu
+Ñ;Ave sudamericana no voladora;Ñandú
+O;Persona que observa con atención;Observador
+O;Rama de la filosofía que estudia el ser;Ontología
+O;Exceso de orgullo;Ostentación
+O;Acción de examinar algo con atención;Observación
+P;Acción de prever o suponer algo;Presunción
+P;Enunciado que encierra una contradicción lógica;Paradoja
+P;Documento que acredita identidad;Pasaporte
+P;Opinión infundada aceptada como verdadera;Prejuicio
+Q;Conjunto de plumas de un ave;Quilla
+Q;Cantidad mínima indivisible en física moderna;Quantum
+Q;Daño o perjuicio sufrido;Quebranto
+Q;Queja o lamento breve;Quejido
+R;Acción de volver a organizar algo;Reordenación
+R;Arte de hablar o escribir de forma persuasiva;Retórica
+R;Capacidad de razonar lógicamente;Raciocinio
+R;Proceso de volver a organizar algo;Reestructuración
+S;Acción de sustituir una cosa por otra;Sustitución
+S;Figura literaria que mezcla sensaciones de distintos sentidos;Sinestesia
+S;Conjunto ordenado de ideas;Sistema
+S;Conjunto de personas, pueblos o naciones que conviven bajo normas comunes;Sociedad
+T;Temor excesivo e irracional;Terror
+T;Doctrina que explica los hechos por su finalidad;Teleología
+T;Temor profundo y persistente;Tribulación
+T;Acción de dar forma a una idea;Teorización
+U;Uso indebido de poder o autoridad;Usurpación
+U;Representación ideal de una sociedad perfecta;Utopía
+U;Que ocurre después en el tiempo;Ulterior
+U;Estado de tranquilidad o calma;Urbanidad
+V;Cambio rápido e inestable;Volatilidad
+V;Acción de defender o justificar algo públicamente;Vindicación
+V;Cualidad de quien actúa con valentía;Valentía
+V;Variedad de caminos o soluciones;Versatilidad
+W;Lugar donde se celebran bodas civiles;Wedding
+W;Página web editable de forma colaborativa;Wiki
+W;Unidad de potencia del sistema internacional;Watt
+W;Unidad de potencia eléctrica;Watio
+X;Miedo irracional a lo desconocido;Xenofobia
+X;Procedimiento de reproducción mediante electricidad estática;Xerografía
+X;Elemento químico de número atómico 54;Xenón
+X;Gas noble utilizado en iluminación;Xenón
+Y;Instrumento musical de viento andino;Yaraví
+Y;Lugar donde se encuentran restos minerales o arqueológicos;Yacimiento
+Y;Terreno despoblado y estéril;Yermo
+Y;Unidad para medir distancias;Yarda
+Z;Movimiento rápido y brusco;Zigzag
+Z;Estado de inquietud o angustia profunda;Zozobra
+Z;Engaño o trampa para perjudicar a alguien;Zancadilla
+Z;Movimiento brusco y rápido;Zarandeo
