@@ -1,130 +1,130 @@
-A;Animal que vuela y canta por la mañana;Ave
-A;Fruta amarilla y alargada que se pela;Ananá
-A;Color del mar y del cielo;Azul
-A;Carbohidrato que se encuentra en la paella;Arroz
-A;Objeto que se usa para escuchar música en los oídos;Auriculares
-B;Objeto para beber agua;Botella
-B;Comida redonda que se come con salsa;Bocadillo
-B;Animal que vuela de noche y duerme de día;Búho
-B;Fruta curva y amarilla;Banana
-B;Vehículo grande para muchos pasajeros;Bus
-C;Animal que corre rápido y tiene joroba;Camello
-C;Casa de un rey;Castillo
-C;Fruta roja con pepitas; Cereza
-C;Color como el chocolate, parecido al marrón;Café
-C;Animal que canta "cucú";Cuco
-D;Parte del cuerpo para masticar;Diente
-D;Número después del nueve;Diez
-D;Fruta dulce y amarilla como una pera;Dátil
-D;Cubo que tiene 6 lados y se utiliza en juegos de mesa;Dado
-D;Número que sigue después del 9;Diez
-E;Animal grande con trompa y orejas grandes;Elefante
-E;Cosa que brilla en el cielo de noche;Estrella
-E;Parte del cuerpo para digerir comida;Estómago
-E;Objeto para subir pisos;Escalera
-E;País donde está el estadio Bernabéu;España.
-F;Cosa que se enciende y da luz;Foco
-F;Fruta roja con forma de corazón;Fresa
-F;Elemento natural que quema;Fuego
-F;Deporte con pelota y goles;Fútbol
-G;Animal que maúlla y caza ratones;Gato
-G;Objeto para ver lejos;Gafas
-G;Cosa que se infla y es redonda;Globo
-G;Persona grande como un monstruo;Gigante
-H;Objeto para cortar madera;Hacha
-H;Comida fría y dulce;Helado
-H;Cosa que crece en el jardín y es verde;Hierba
-H;Hueso del brazo;Húmero
-I;Edificio para rezar;Iglesia
-I;Idioma como el inglés;Inglés
-I;Cosa que atrae metal;Imán
-I;Animal como un lagarto pero más grande;Iguana
-I;Forma de hablar en otro país;Idioma
-J;Animal alto con cuello largo;Jirafa
-J;Cosa para jugar con amigos;Juguete
-J;Comida dulce como mermelada;Jalea
-J;Bebida de frutas;Jugo
-J;Objeto para lavar platos;Jabón
-K;Animal que salta y vive en Australia;Kanguro
-K;Fruta verde y peluda;Kiwi
-K;Deporte que se usa para la defensa personal;Karate
-K;Cosa para comer con salsa;Kétchup
-K;Animal como un oso pero blanco;Koala
-L;Animal que aúlla en la luna;Lobo
-L;Objeto para leer;Libro
-L;Fruta amarilla y ácida;Limon
-L;Parte del cuerpo para hablar;Lengua
-L;Cosa que brilla en el cielo;Luna
-M;Fruta roja o verde que crece en los arboles;Manzana
-M;Objeto para medir longitud;Metro
-M;Cosa dulce como el azúcar;Miel
-M;Animal que vuela y es colorido;Mariposa
-M;Lugar grande como el océano;Mar
-N;Cosa blanca en el cielo;Nube
-N;Parte del cuerpo para oler;Nariz
-N;Fruta anaranjada;Naranja
-N;Número después del ocho;Nueve
-N;Lugar para vivir de los pájaros;Nido
-Ñ;Animal como un toro pero salvaje;Ñu
-Ñ;plato tradicional italiano que se elabora con patata, harina y huevo;Ñoquis
-Ñ;Amigo del chavo del ocho;Ñoño
-Ñ(contiene Ñ);Antonimo de niña;Niño
-Ñ(contiene Ñ);Fruta amarilla y dulce, se encuentra en la Pizza hawaiana;Piña
-O;Parte del cuerpo para oír;Oído
-O;Animal que hiberna;Oso
-O;Lo que robaron los españoles en las conquistas;Oro
-O;Lugar grande de agua;Océano
-O;Forma de onda en el mar;Ola
-P;Animal que vuela y tiene colores;Pájaro
-P;Fruta amarilla como una manzana;Pera
-P;Cosa para comer con tenedor, los Italianos comen mucho de eso;Pasta
-P;Animal con aletas y escamas;Pez
-P;Parte del cuerpo para caminar;Pie
-Q;Comida amarilla y derretida;Queso
-Q;Palabra de pregunta para dirigirse a una persona;Quién
-Q;Juego con preguntas;Quiz
-R;Animal pequeño que roba queso;Ratón
-R;Color como la sangre;Rojo
-R;Cosa que croa en el estanque;Rana
-R;Forma de expresar alegría/felicidad;Risa
-R;Árbol que da flores;Rosa
-S;Animal que sisea y se arrastra;Serpiente
-S;Cosa amarilla en el cielo;Sol
-S;Fruta verde por fuera, roja por dentro;Sandía
-S;Accion que hace una persona con la boca para hacer un silbido;Silbar
-S;Animal que brinca y es verde;Sapo
-T;Animal grande con cuernos;Toro
-T;Objeto para beber té;Taza
-T;Fruta roja y jugosa;Tomate
-T;Animal con caparazón;Tortuga
-T;Lugar para vivir;Tienda
-U;Fruta morada en racimo;Uva
-U;Parte del cuerpo para cortar;Uña
-U;Cosa para proteger de la lluvia (en ingles);Umbrella
-U;Primer numero de los numeros naturales;Uno
-U;Lugar lejano como una estrella;Universo
-U;Fruta que se come en año nuevo;Uva
-V;Animal que da leche y tiene cuernos;Vaca
-V;Color como las plantas;Verde
-V;Cosa que sopla;Viento
-V;Animal que vuela rápido;Vencejo
-V;Forma de ir rápido;Velocidad? V;Casa para vacaciones;Villa
-W;Villano de Batman;Wason
-W;Sistema de conexión inalámbrica que da internet;Wifi
-W;Bebida escocesa que contiene alcohol;Whisky
-W;Lugar como Nueva York pero con W;Washington
-W;Applicación que se utiliza para comunicarse;Whatsapp
-X;Instrumento musical como un piano pero pequeño;Xilófono
-X;Cosa para rayos en el hospital (en ingles);X-ray
-X;Número romano para 10;X
-X;Lugar en China;Xian
-X;Variable matemática;X
-Y;Comida blanca o con sabor y cremosa ;Yogur
-Y;Web/App que se usa para ver y subir videos;Youtube
-Y;Bebida de hierbas;Yerba
-Z;Animal rayado y negro con blanco;Zebra
-Z;Calzado para los pies;Zapato
-Z;Animal que vuela y pica;Zancudo
-Z;Paso largo que se da con movimiento acelerado o por tener las piernas largas;Zancada
-Z;Lugar para animales;Zoológico
-Z;Animal astuto;Zorro
+A;Animal que vuela y canta por la mañana;Ave;0
+A;Fruta amarilla y alargada que se pela;Ananá;0
+A;Color del mar y del cielo;Azul;0
+A;Carbohidrato que se encuentra en la paella;Arroz;0
+A;Objeto que se usa para escuchar música en los oídos;Auriculares;0
+B;Objeto para beber agua;Botella;0
+B;Comida redonda que se come con salsa;Bocadillo;0
+B;Animal que vuela de noche y duerme de día;Búho;0
+B;Fruta curva y amarilla;Banana;0
+B;Vehículo grande para muchos pasajeros;Bus;0
+C;Animal que corre rápido y tiene joroba;Camello;0
+C;Casa de un rey;Castillo;0
+C;Fruta roja con pepitas; Cereza;0
+C;Color como el chocolate, parecido al marrón;Café;0
+C;Animal que canta "cucú";Cuco;0
+D;Parte del cuerpo para masticar;Diente;0
+D;Número después del nueve;Diez;0
+D;Fruta dulce y amarilla como una pera;Dátil;0
+D;Cubo que tiene 6 lados y se utiliza en juegos de mesa;Dado;0
+D;Número que sigue después del 9;Diez;0
+E;Animal grande con trompa y orejas grandes;Elefante;0
+E;Cosa que brilla en el cielo de noche;Estrella;0
+E;Parte del cuerpo para digerir comida;Estómago;0
+E;Objeto para subir pisos;Escalera;0
+E;País donde está el estadio Bernabéu;España;0
+F;Cosa que se enciende y da luz;Foco;0
+F;Fruta roja con forma de corazón;Fresa;0
+F;Elemento natural que quema;Fuego;0
+F;Deporte con pelota y goles;Fútbol;0
+G;Animal que maúlla y caza ratones;Gato;0
+G;Objeto para ver lejos;Gafas;0
+G;Cosa que se infla y es redonda;Globo;0
+G;Persona grande como un monstruo;Gigante;0
+H;Objeto para cortar madera;Hacha;0
+H;Comida fría y dulce;Helado;0
+H;Cosa que crece en el jardín y es verde;Hierba;0
+H;Hueso del brazo;Húmero;0
+I;Edificio para rezar;Iglesia;0
+I;Idioma como el inglés;Inglés;0
+I;Cosa que atrae metal;Imán;0
+I;Animal como un lagarto pero más grande;Iguana;0
+I;Forma de hablar en otro país;Idioma;0
+J;Animal alto con cuello largo;Jirafa;0
+J;Cosa para jugar con amigos;Juguete;0
+J;Comida dulce como mermelada;Jalea;0
+J;Bebida de frutas;Jugo;0
+J;Objeto para lavar platos;Jabón;0
+K;País de Asia;Kazajistán;0
+K;Fruta verde y peluda;Kiwi;0
+K;Deporte que se usa para la defensa personal;Karate;0
+K;Cosa para comer con salsa;Kétchup;0
+K;Animal como un oso pero blanco;Koala;0
+L;Animal que aúlla en la luna;Lobo;0
+L;Objeto para leer;Libro;0
+L;Fruta amarilla y ácida;Limón;0
+L;Parte del cuerpo para hablar;Lengua;0
+L;Cosa que brilla en el cielo;Luna;0
+M;Fruta roja o verde que crece en los arboles;Manzana;0
+M;Objeto para medir longitud;Metro;0
+M;Cosa dulce como el azúcar;Miel;0
+M;Animal que vuela y es colorido;Mariposa;0
+M;Lugar grande como el océano;Mar;0
+N;Cosa blanca en el cielo;Nube;0
+N;Parte del cuerpo para oler;Nariz;0
+N;Fruta anaranjada;Naranja;0
+N;Número después del ocho;Nueve;0
+N;Lugar para vivir de los pájaros;Nido;0
+Ñ;Animal como un toro pero salvaje;Ñu;0
+Ñ;plato tradicional italiano que se elabora con patata, harina y huevo;Ñoquis;0
+Ñ;Amigo del chavo del ocho;Ñoño;0
+Ñ(contiene Ñ);Antonimo de niña;Niño;0
+Ñ(contiene Ñ);Fruta amarilla y dulce, se encuentra en la Pizza hawaiana;Piña;0
+O;Parte del cuerpo para oír;Oído;0
+O;Animal que hiberna;Oso;0
+O;Lo que robaron los españoles en las conquistas;Oro;0
+O;Lugar grande de agua;Océano;0
+O;Forma de onda en el mar;Ola;0
+P;Animal que vuela y tiene colores;Pájaro;0
+P;Fruta amarilla como una manzana;Pera;0
+P;Cosa para comer con tenedor, los Italianos comen mucho de eso;Pasta;0
+P;Animal con aletas y escamas;Pez;0
+P;Parte del cuerpo para caminar;Pie;0
+Q;Comida amarilla y derretida;Queso;0
+Q;Palabra de pregunta para dirigirse a una persona;Quién;0
+Q;Juego con preguntas;Quiz;0
+R;Animal pequeño que roba queso;Ratón;0
+R;Color como la sangre;Rojo;0
+R;Cosa que croa en el estanque;Rana;0
+R;Forma de expresar alegría/felicidad;Risa;0
+R;Árbol que da flores;Rosa;0
+S;Animal que sisea y se arrastra;Serpiente;0
+S;Cosa amarilla en el cielo;Sol;0
+S;Fruta verde por fuera, roja por dentro;Sandía;0
+S;Accion que hace una persona con la boca para hacer un silbido;Silbar;0
+S;Animal que brinca y es verde;Sapo;0
+T;Animal grande con cuernos;Toro;0
+T;Objeto para beber té;Taza;0
+T;Fruta roja y jugosa;Tomate;0
+T;Animal con caparazón;Tortuga;0
+T;Lugar para vivir;Tienda;0
+U;Fruta morada en racimo;Uva;0
+U;Parte del cuerpo para cortar;Uña;0
+U;Cosa para proteger de la lluvia (en ingles);Umbrella;0
+U;Primer numero de los numeros naturales;Uno;0
+U;Lugar lejano como una estrella;Universo;0
+U;Fruta que se come en año nuevo;Uva;0
+V;Animal que da leche y tiene cuernos;Vaca;0
+V;Color como las plantas;Verde;0
+V;Cosa que sopla;Viento;0
+V;Animal que vuela rápido;Vencejo;0
+V;Forma de ir rápido;Velocidad? V;Casa para vacaciones;Villa;0
+W;Villano de Batman;Wason;0
+W;Sistema de conexión inalámbrica que da internet;Wifi;0
+W;Bebida escocesa que contiene alcohol;Whisky;0
+W;Lugar como Nueva York pero con W;Washington;0
+W;Applicación que se utiliza para comunicarse;Whatsapp;0
+X;Instrumento musical como un piano pero pequeño;Xilófono;0
+X;Cosa para rayos en el hospital (en ingles);X-ray;0
+X;Número romano para 10;X;0
+X;Lugar en China;Xian;0
+X;Variable matemática;X;0
+Y;Comida blanca o con sabor y cremosa ;Yogur;0
+Y;Web/App que se usa para ver y subir videos;Youtube;0
+Y;Bebida de hierbas;Yerba;0
+Z;Animal rayado y negro con blanco;Zebra;0
+Z;Calzado para los pies;Zapato;0
+Z;Animal que vuela y pica;Zancudo;0
+Z;Paso largo que se da con movimiento acelerado o por tener las piernas largas;Zancada;0
+Z;Lugar para animales;Zoológico;0
+Z;Animal astuto;Zorro;0

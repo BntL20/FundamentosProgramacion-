@@ -1,104 +1,103 @@
-A;Fruta azul;Arándano
-A;Prenda ropa que te protege del frío;Abrigo
-A;Lugar donde viven los peces;Acuario
-A;Continente donde viven los canguros y los koalas;Australia
-B;Color azul en inglés;Blue
-B;Pan pequeño redondo;Bollo
-B;Objeto para escribir con tinta;Bolígrafo
-B;Capital de Brasil;Brasilia
-C;Lugar donde estudian los niños;Colegio
-C;Bebida caliente por la mañana;Café
-C;Animal que sube montañas;Cabra montesa
-C;Órgano del cuerpo que bombea la sangre;Corazón
-D;Día que va después del sábado;Domingo
-D;Animal que dice “quack” en inglés;Duck
-D;Parte del cuerpo para comer;Diente
-D;Moneda de los Estados Unidos;Dólar
-E;Animal muy grande de color gris;Elefante
-E;Lo contrario a amigo;Enemigo
-E;Aparato para subir pisos;Elevador
-E;País europeo cuya capital es Madrid;España
-F;Lo contrario de caliente;Frío
-F;Ecuación matemática;Fórmula
-F;Pais donde se encuentra la Torre Eiffel;Francia
-F;Deporte practicado por Lionel Messi y Neymar;Fútbol
-G;Animal que dice “miau”;Gato
-G;Objeto de gran tamaño;Grande
-G;Persona que gobierna un país;Governante
-G;Persona que vence en una competición;Ganador
-H;Se dice al llegar a un sitio;Hola
-H;Pieza de metal que se clava en los cascos de los caballos;Herradura
-H;Persona de tu familia;Hermano
-H;Medida que indica tiempo;Hora
-I;País con forma de bota;Italia
-I;Idioma hablado en Estados Unidos;Inglés
-I;Lo contrario de exterior;Interior
-I;Fuego a gran escala;Incendio
-J;Mes del verano;Julio
-J;Palabras específicas de un área;Jerga
-J;Comida española;Jamón
-J;Juego de mesa que hay que apilar bloques de madera;Jenga
-K;Deporte de lucha japonesa;Kárate
-K;1000 gramos;Kilogramo
-K;Arte marcial japonés;Kendo
-K;Prenda que se utiliza para realizar artes marciales;Kimono
-L; Animal rey de la selva;León
-L; Sinónimo de mortal;Letal
-L; Bebida de limón;Limonada
-L;Capital de Perú;Lima
-M; Ser cada vez mejor en algo;Mejorar
-M; Pequeño;Menor
-M; Prenda para las manos en invierno;Manoplas
-M;Planeta rojo del sistema solar;Marte
-N;Parte de la cara para oler;Nariz
-N;Color del cielo de noche;Negro
-N;Persona con una edad de 3 a 14 años;Niño
-N;País nórdico famoso por los vikingos;Noruega
-O;Animal que da lana;Oveja
-O;Lo que se percibe con el olfato;Olor
-O;Forma de circulo alargado;Ovalo
-O;Principio de algo;Origen
-P;De tamaño reducido;Pequeño
-P;Animal que vive en el mar y tiene tentáculos;Pulpo
-P;Fruta amarilla con pinchos;Piña
-P;Ave que representa la paz;Paloma
-Q;Alimento que comen los ratones;Queso
-Q;Comida que se derrite en la pizza;Queso
-Q;Posición número 5;Quinto
-Q;Ciencia que estudia la materia;Química
-R;Color de la sangre;Rojo
-R; Animal que come queso;Ratón
-R;Sinónimo de extraño;Objet Raro
-R;Animal verde que salta y vive cerca del agua;Rana
-S;Astro que nos da luz;Sol
-S;Día de fin de semana;Sábado
-S;Condimento que da sabor a la comida;Sal
-S;Enfermedad que provoca marcas rojas en la piel;Sarampión
-T;Aparato para ver la televisión;Televisor
-T;Bebida que se toma caliente;Té
-T;Elemento de un parque infantil;Tobogán
-T;Objeto para escribir en la  pizarra;Tiza
-U;Fruta pequeña morada;Uva
-U;Mismo valor a 1;Unidad
-U;Cuando dos elementos se unen;Unión
-U;Ropa especial que usan en el colegio;Uniforme
-V; Bebida de color rojo; Vino
-V; Agujero en la pared con cristal; Ventana
-V; Recipiente para beber; Vaso
-V;Cilindro de cera que da luz al encenderse;Vela
-W;Bruja en inglés;Witch
-W;Bebida alcohólica inglesa;Whisky
-W;Personaje de Disney que es un oso amarillo que come miel;Winnie the pooh
-W;Tecnología que permite conectarse a Internet sin cables;Wifi
-X;Instrumento musical con teclas de metal;Xilófono
-X;Letra que indica error;X
-X;Miedo o rechazo a personas inmigrantes;Xenofobia
-X;Forma de decir besos y abrazos en inglés;XOXO
-Y;Palabra para nombrarse a sí mismo;Yo
-Y;Si en inglés;Yes
-Y;Barco lujoso;Yate
-Y;Hembra del caballo;Yegua
-Z;Lo que se lleva en los pies;Zapatos
-Z;Hortaliza de color naranja;Zanahoria
-Z;Calzado deportivo;Zapatilla
-Z;Jugo de fruta;Zumo
+A;Fruta azul;Arándano;0
+A;Prenda ropa que te protege del frío;Abrigo;0
+A;Lugar donde viven los peces;Acuario;0
+A;Continente donde viven los canguros y los koalas;Australia;0
+B;Color azul en inglés;Blue;0
+B;Pan pequeño redondo;Bollo;0
+B;Objeto para escribir con tinta;Bolígrafo;0
+B;Capital de Brasil;Brasilia;0
+C;Lugar donde estudian los niños;Colegio;0
+C;Bebida caliente por la mañana;Café;0
+C;Animal que sube montañas;Cabra montesa;0
+C;Órgano del cuerpo que bombea la sangre;Corazón;0
+D;Día que va después del sábado;Domingo;0
+D;Animal que dice “quack” en inglés;Duck;0
+D;Parte del cuerpo para comer;Diente;0
+D;Moneda de los Estados Unidos;Dólar;0
+E;Animal muy grande de color gris;Elefante;0
+E;Lo contrario a amigo;Enemigo;0
+E;Aparato para subir pisos;Elevador;0
+E;País europeo cuya capital es Madrid;España;0
+F;Lo contrario de caliente;Frío;0
+F;Ecuación matemática;Fórmula;0
+F;Pais donde se encuentra la Torre Eiffel;Francia;0
+F;Deporte practicado por Lionel Messi y Neymar;Fútbol;0
+G;Animal que dice “miau”;Gato;0
+G;Objeto de gran tamaño;Grande;0
+G;Persona que gobierna un país;Governante;0
+G;Persona que vence en una competición;Ganador;0
+H;Se dice al llegar a un sitio;Hola;0
+H;Pieza de metal que se clava en los cascos de los caballos;Herradura;0
+H;Persona de tu familia;Hermano;0
+H;Medida que indica tiempo;Hora;0
+I;País con forma de bota;Italia;0
+I;Idioma hablado en Estados Unidos;Inglés;0
+I;Lo contrario de exterior;Interior;0
+I;Fuego a gran escala;Incendio;0
+J;Mes del verano;Julio;0
+J;Palabras específicas de un área;Jerga;0
+J;Comida española;Jamón;0
+J;Juego de mesa que hay que apilar bloques de madera;Jenga;0
+K;Deporte de lucha japonesa;Kárate;0
+K;1000 gramos;Kilogramo;0
+K;Arte marcial japonés;Kendo;0
+K;Prenda que se utiliza para realizar artes marciales;Kimono;0
+L; Animal rey de la selva;León;0
+L; Sinónimo de mortal;Letal;0
+L; Bebida de limón;Limonada;0
+L;Capital de Perú;Lima;0
+M; Ser cada vez mejor en algo;Mejorar;0
+M; Pequeño;Menor;0
+M; Prenda para las manos en invierno;Manoplas;0
+M;Planeta rojo del sistema solar;Marte;0
+N;Parte de la cara para oler;Nariz;0
+N;Color del cielo de noche;Negro;0
+N;Persona con una edad de 3 a 14 años;Niño;0
+N;País nórdico famoso por los vikingos;Noruega;0
+O;Animal que da lana;Oveja;0
+O;Lo que se percibe con el olfato;Olor;0
+O;Forma de circulo alargado;Ovalo;0
+O;Principio de algo;Origen;0
+P;De tamaño reducido;Pequeño;0
+P;Animal que vive en el mar y tiene tentáculos;Pulpo;0
+P;Fruta amarilla con pinchos;Piña;0
+P;Ave que representa la paz;Paloma;0
+Q;Alimento que comen los ratones;Queso;0
+Q;Comida que se derrite en la pizza;Queso;0
+Q;Posición número 5;Quinto;0
+Q;Ciencia que estudia la materia;Química;0
+R;Color de la sangre;Rojo;0
+R; Animal que come queso;Ratón;0
+R;Sinónimo de extraño;Objet Raro;0
+R;Animal verde que salta y vive cerca del agua;Rana;0
+S;Astro que nos da luz;Sol;0
+S;Día de fin de semana;Sábado;0
+S;Condimento que da sabor a la comida;Sal;0
+S;Enfermedad que provoca marcas rojas en la piel;Sarampión;0
+T;Aparato para ver la televisión;Televisor;0
+T;Bebida que se toma caliente;Té;0
+T;Elemento de un parque infantil;Tobogán;0
+T;Objeto para escribir en la  pizarra;Tiza;0
+U;Fruta pequeña morada;Uva;0
+U;Mismo valor a 1;Unidad;0
+U;Cuando dos elementos se unen;Unión;0
+U;Ropa especial que usan en el colegio;Uniforme;0
+V; Bebida de color rojo; Vino;0
+V; Agujero en la pared con cristal; Ventana;0
+V; Recipiente para beber; Vaso;0
+V;Cilindro de cera que da luz al encenderse;Vela;0
+W;Bruja en inglés;Witch;0
+W;Bebida alcohólica inglesa;Whisky;0
+W;Personaje de Disney que es un oso amarillo que come miel;Winnie the pooh;0
+W;Tecnología que permite conectarse a Internet sin cables;Wifi;0
+X;Instrumento musical con teclas de metal;Xilófono;0
+X;Letra que indica error;X;0
+X;Miedo o rechazo a personas inmigrantes;Xenofobia;0
+X;Forma de decir besos y abrazos en inglés;XOXO;0
+Y;Palabra para nombrarse a sí mismo;Yo;0
+Y;Si en inglés;Yes;0
+Y;Barco lujoso;Yate;0
+Y;Hembra del caballo;Yegua;0
+Z;Lo que se lleva en los pies;Zapatos;0
+Z;Hortaliza de color naranja;Zanahoria;0
+Z;Calzado deportivo;Zapatilla;0

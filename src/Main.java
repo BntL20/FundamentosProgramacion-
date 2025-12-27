@@ -26,12 +26,9 @@ public class Main {
     //ELECCIÓN DE NIVEL
     public static String elegirNivel(){
         Scanner sc = new Scanner(System.in);
+        String nivel;
         System.out.println("Elige nivel: infantil / facil / medio / avanzado");
-        return sc.nextLine().toLowerCase();
-    }
-
-    public static String obtenerFicheroNivel(String nivel) {
-        nivel = nivel.toLowerCase();
+        nivel = sc.nextLine().toLowerCase();
 
         if (nivel.equals("infantil")) {
             return "rosco_infantil.txt";
@@ -75,7 +72,7 @@ public class Main {
             }
         }
 
-        //SEGUNDA VUELTA (aquí se hacen las preguntas donde se respondieron "pasapalabra"
+        //SEGUNDA VUELTA (aquí se hacen las preguntas donde se respondieron "pasapalabra")
         if (hayPasapalabras(rosco)) {
             System.out.print("¿Desea continuar con las preguntas pendientes? (s/n): ");
             continuar = sc.nextLine().toLowerCase().charAt(0);
