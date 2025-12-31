@@ -63,7 +63,7 @@ public class Main {
             int [] contadorPorLetra = new int [26];
 
             BufferedReader br = new BufferedReader(new FileReader(nombreFichero));
-            String linea;
+            String linea = "";
 
             //Este while lee la línea del fichero hasta que esté vacía = fichero acabado
             while (null != linea){
@@ -97,7 +97,7 @@ public class Main {
                 char letra = partes [0].charAt(0);
                 int indice = letra - 'A';
 
-                if(contadorActual[indice] == aleatorioPorLetra){ //elige aleatoriamente la pregunta de la letra.
+                if(contadorActual[indice] == (aleatorioPorLetra)){ //elige aleatoriamente la pregunta de la letra.
                     rosco [indice][0] = partes [0]; //guardamos la letra
                     rosco [indice][1] = partes [1]; //guardamos la pregunta
                     rosco [indice][2] = partes [2]; //guardamos la respuesta
@@ -203,7 +203,7 @@ public class Main {
 
     //PERSONA 1
     //GUARDAR PARTIDA
-    public static void guardarDatosPartida(String nombreFcihero, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
+    public static void guardarDatosPartida(String nombreFichero, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
         try {
             BufferedWriter bw = new BufferedWriter (new FileWriter (nombreFichero, true));
 
