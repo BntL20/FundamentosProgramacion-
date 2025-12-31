@@ -3,6 +3,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -43,9 +46,30 @@ public class Main {
 
     //PERSONA 1
     //CARGAR DATOS
-    public static String[][] cargarDatos(String nombreFichero){
-        return null;
+    public static String[][] cargarDatos(String nombreFichero){ //Función que carga los ficheros en el programa para poder trabajar con ellos
+
+        String [] [] rosco = new String [26][4]; //matriz que guarda la letra,la pregunta,la respuesta y el estado.
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(nombreFichero));
+            String linea;
+
+            //Este while imprime la linea del fichero siempre y no esté vacio
+            while (null != linea){
+                System.out.println (linea);
+                //VOY POR AQUÍ. TODAVÍA ME QUEDA TERMINAR EL WHILE
+            }
+
+            br.close();
+        }
+
+        catch(IOException e){
+            System.out.println ("Error leyendo el fichero");
+        }
+
+        return rosco;
     }
+
 
     //PERSONA 2
     //LOGICA DEL JUEGO
