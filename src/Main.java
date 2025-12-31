@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.Random;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.BufferedWriter;
+
 
 
 public class Main {
@@ -50,24 +52,68 @@ public class Main {
 
         String [] [] rosco = new String [26][4]; //matriz que guarda la letra,la pregunta,la respuesta y el estado.
 
+        //Inicializamos el estado de las preguntas para que siempre empiecen en 0
+        for (int i = 0;i<26;i++){
+            rosco [3][0] = "0";
+        }
+
+        //PRIMERA LECTURA DEL FICHERO
         try {
+            //Contamos cuántas palabras hay por letra
+            int [] contadorPorLetra = new int [26];
+
             BufferedReader br = new BufferedReader(new FileReader(nombreFichero));
             String linea;
 
-            //Este while imprime la linea del fichero siempre y no esté vacio
+            //Este while lee la línea del fichero hasta que esté vacía = fichero acabado
             while (null != linea){
-                System.out.println (linea);
-                //VOY POR AQUÍ. TODAVÍA ME QUEDA TERMINAR EL WHILE
+                char letra = linea.charAt (0); //sacamos la primera letra de la linea
+                int indice = letra - 'A'; //y convertimos las letras en números para que representen el índice
+                contadorPorLetra[indice] ++;  //sumamos 1 a la letra del indice porque ha encontrado una pregunta más
+
             }
 
-            br.close();
+            br.close(); //cerramos el fichero
+
+            //Elegir una posición aleatoria para cada letra
+            int [] aleatorioPorLetra = new int [26]; //aquí guardamos qué pregunta queremos elegir de cada letra (solo 1 por letra)
+            for (int i = 0; i<26;i++){
+                aleatorioPorLetra[i] = (int) (Math.random() * contadorPorLetra [i]); /*Con Math.random() obtenemos un número entre 0 y 1.
+                                                                                      Al multiplicarlo por contadorPorLetra pedimos un número aleatorio entre 0 y el indice
+                                                                                      Con (int) quitamos los decimales*/
+            }
+
+        //SEGUNDA LECTURA DEL FICHERO
+            //Volver a leer el fichero y guardar la elegida
+            int[] contadorActual = new int [26]; //Almacena cuantas preguntas hemos leído ya de cada letra
+
+            br = new BufferedReader (new FileReader (nombreFichero));//abrimos el fichero otra vez
+
+            while ((linea = br.readLine()) != null){ //mientras haya líneas en el fichero lo lee línea a línea
+                String [] partes = linea.split(";"); /*separa la línea en partes cada vez que encuentra un ;
+                                                            partes [0] = letra
+                                                            partes [1] = pregunta
+                                                            partes [2] = respuesta*/
+                char letra = partes [0].charAt(0);
+                int indice = letra - 'A';
+
+                if(contadorActual[indice] == aleatorioPorLetra){ //elige aleatoriamente la pregunta de la letra.
+                    rosco [indice][0] = partes [0]; //guardamos la letra
+                    rosco [indice][1] = partes [1]; //guardamos la pregunta
+                    rosco [indice][2] = partes [2]; //guardamos la respuesta
+                }
+
+                contadorActual[indice]++; //sumamos 1 porque hemos leído otra pregunta de esa letra
+            }
+
+            br.close();//cerramos el fichero
         }
 
         catch(IOException e){
-            System.out.println ("Error leyendo el fichero");
+            System.out.println ("Error leyendo el fichero"); //si no funciona el try que imprima ese error
         }
 
-        return rosco;
+        return rosco; //devolvemos la matriz completa y lista
     }
 
 
@@ -123,7 +169,7 @@ public class Main {
         }
     }
 
-    //RECORRE TODO EL ROSCO PA SABER SI HAY PASAPALABRA O NO
+    //RECORRE TODO EL ROSCO PARA SABER SI HAY PASAPALABRA O NO
     public static boolean hayPasapalabras(String[][] rosco) {
         for (int i = 0; i < 26; i++) {
             if (rosco[i][3].equals("3")) {
@@ -157,8 +203,19 @@ public class Main {
 
     //PERSONA 1
     //GUARDAR PARTIDA
-    public static void guardarDatosPartida(){
+    public static void guardarDatosPartida(String nombreFcihero, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
+        try {
+            BufferedWriter bw = new BufferedWriter (new FileWriter (nombreFichero, true));
 
+            bw.write (correoUsuario + ";" + aciertos + ";" + fallos + ";" + pasapalabras + ";" + nivel);
+            bw.newLine();
+
+            bw.close();
+        }
+
+        catch (IOException e){
+            System.out.println ("Error al escribir el fichero");
+        }
     }
 }
 
