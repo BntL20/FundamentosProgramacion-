@@ -10,7 +10,7 @@ B;Fruta curva y amarilla;Banana;0
 B;Vehículo grande para muchos pasajeros;Bus;0
 C;Animal que corre rápido y tiene joroba;Camello;0
 C;Casa de un rey;Castillo;0
-C;Fruta roja con pepitas; Cereza;0
+C;Fruta roja con pepitas;Cereza;0
 C;Color como el chocolate, parecido al marrón;Café;0
 C;Animal que canta "cucú";Cuco;0
 D;Parte del cuerpo para masticar;Diente;0

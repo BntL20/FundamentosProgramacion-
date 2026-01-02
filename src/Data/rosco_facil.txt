@@ -12,7 +12,7 @@ C;Animal que sube montañas;Cabra montesa;0
 C;Órgano del cuerpo que bombea la sangre;Corazón;0
 D;Día que va después del sábado;Domingo;0
 D;Animal que dice “quack” en inglés;Duck;0
-D;Parte del cuerpo para comer;Diente;0
+D;Parte del cuerpo para comer;Dientes;0
 D;Moneda de los Estados Unidos;Dólar;0
 E;Animal muy grande de color gris;Elefante;0
 E;Lo contrario a amigo;Enemigo;0
@@ -24,7 +24,7 @@ F;Pais donde se encuentra la Torre Eiffel;Francia;0
 F;Deporte practicado por Lionel Messi y Neymar;Fútbol;0
 G;Animal que dice “miau”;Gato;0
 G;Objeto de gran tamaño;Grande;0
-G;Persona que gobierna un país;Governante;0
+G;Persona que gobierna un país;Gobernante;0
 G;Persona que vence en una competición;Ganador;0
 H;Se dice al llegar a un sitio;Hola;0
 H;Pieza de metal que se clava en los cascos de los caballos;Herradura;0

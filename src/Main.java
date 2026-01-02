@@ -9,16 +9,19 @@ import java.io.BufferedWriter;
 
 
 public class Main {
+    static Usuario[] usuarios = new Usuario[10];
+    static int numUsuarios = 0;
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         //Carga usuarios existentes desde la matriz
         //leerUsuarios();
 
         //Registrar o identificar usuario
-        //Usuario usuarioActual = registrarUsuario();
+        Usuario usuarioActual = registrarUsuario();
 
         //Elegir nivel (devuelve directamente el fichero)
-        String nombreFichero = elegirNivel();
+        String nivel = elegirNivel();
+        String nombreFichero = obtenerFicheroNivel(nivel);
 
         //Cargar datos del rosco según el nivel
         String[][] rosco = cargarDatos(nombreFichero);
@@ -28,36 +31,78 @@ public class Main {
         mostrarResultados(rosco);
 
         //Guardar resultados del usuario
-        //guardarDatosPartida(usuarioActual, rosco);
+        int[] r = calcularResultados(rosco);
+        mostrarResultados(rosco);
+
+        guardarDatosPartida("src/Data/MarcadorUsuario.txt", usuarioActual.correo, r[0], r[1], r[2], nivel);
 
     }
 
-    //PERSONA 3
     //REGISTRO DE USUARIOS
     public static Usuario registrarUsuario(){
-    return null;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Introduce nombre: ");
+        String nombre = sc.nextLine();
+
+        int edad;
+        do {
+            System.out.print("Introduce edad: ");
+            edad = sc.nextInt();
+            sc.nextLine();
+
+            if (edad <= 0) {
+                System.err.println("Error: La edad debe ser > 0");
+            }
+        } while (edad <= 0);
+
+        String correo;
+        do {
+            System.out.print("Introduce correo: ");
+            correo = sc.nextLine();
+
+            if (!correo.contains("@")) {
+                System.out.println("Error: el correo debe contener '@'.");
+            }
+        } while (!correo.contains("@"));
+
+        // ===== BUSCAR USUARIO EXISTENTE =====
+        for (int i = 0; i < numUsuarios; i++) {
+            if (usuarios[i].correo.equalsIgnoreCase(correo)) {
+                System.out.println("Usuario encontrado. Bienvenido de nuevo.");
+                return usuarios[i];
+            }
+        }
+
+        // ===== CREAR NUEVO USUARIO =====
+        Usuario nuevoUsuario = new Usuario(nombre, edad, correo);
+        usuarios[numUsuarios] = nuevoUsuario;
+        numUsuarios++;
+
+        System.out.println("Usuario registrado correctamente.");
+
+        return nuevoUsuario;
     }
 
-    //PERSONA 2
     //ELECCIÓN DE NIVEL
     public static String elegirNivel(){
         Scanner sc = new Scanner(System.in);
         String nivel;
-        System.out.println("Elige nivel: infantil / facil / medio / avanzado");
-        nivel = sc.nextLine().toLowerCase();
+        do {
+            System.out.println("Elige nivel: infantil / facil / medio / avanzado");
+            nivel = sc.nextLine().toLowerCase();
 
-        if (nivel.equals("infantil")) {
-            return "rosco_infantil.txt";
-        } else if (nivel.equals("facil")) {
-            return "rosco_facil.txt";
-        } else if (nivel.equals("medio")) {
-            return "rosco_medio.txt";
-        } else {
-            return "rosco_avanzado.txt";
-        }
+            if(!nivel.equals("infantil") && !nivel.equals("facil") && !nivel.equals("medio") && !nivel.equals("avanzado")){
+                System.out.println("Error de elección de nivel. Coloque uno de los niveles indicados");
+            }
+        }while (!nivel.equals("infantil") && !nivel.equals("facil") && !nivel.equals("medio") && !nivel.equals("avanzado"));
+
+        return nivel;
     }
 
-    //PERSONA 1
+    public static String obtenerFicheroNivel(String nivel){
+        return "src/Data/rosco_"+nivel+".txt";
+    }
+
     //CARGAR DATOS
     public static String[][] cargarDatos(String nombreFichero){ //Función que carga los ficheros en el programa para poder trabajar con ellos
 
@@ -109,8 +154,8 @@ public class Main {
                         rosco[indice][1] = partes[1]; //guardamos la pregunta
                         rosco[indice][2] = partes[2]; //guardamos la respuesta
                     }
+                    contadorActual[indice]++; //sumamos 1 porque hemos leído otra pregunta de esa letra
                 }
-                contadorActual[indice]++; //sumamos 1 porque hemos leído otra pregunta de esa letra
             }
             br.close();//cerramos el fichero
 
@@ -120,8 +165,6 @@ public class Main {
         return rosco; //devolvemos la matriz completa y lista
     }
 
-
-    //PERSONA 2
     //LOGICA DEL JUEGO
     public static void jugarRosco(String[][] rosco) {
         Scanner sc = new Scanner(System.in);
@@ -133,7 +176,7 @@ public class Main {
             //Solo preguntas no planteadas (recuerden que: 0 = no preguntadas, 1 = correctas, 2 = incorrectas, 3 = pasapalabra
             if (rosco[i][3].equals("0")) {
                 System.out.println("Letra " + rosco[i][0] + ":" + rosco[i][1]);
-                respuesta = sc.nextLine();
+                respuesta = sc.nextLine().trim();
                 if (respuesta.equalsIgnoreCase("pasapalabra")) {
                     rosco[i][3] = "3";
                 } else if (respuesta.equalsIgnoreCase(rosco[i][2])) {
@@ -184,28 +227,35 @@ public class Main {
     }
 
     //UN PRINT DE LOS RESULTADOS
-    public static void mostrarResultados(String[][] rosco){
+    public static void mostrarResultados(String[][] rosco) {
+        int[] r = calcularResultados(rosco);
+
+        System.out.println("===== RESULTADO FINAL =====");
+        System.out.println("Aciertos: " + r[0]);
+        System.out.println("Fallos: " + r[1]);
+        System.out.println("Pasapalabras: " + r[2]);
+    }
+
+    public static int[] calcularResultados(String[][] rosco) {
         int aciertos = 0;
         int fallos = 0;
         int pasapalabras = 0;
 
         for (int i = 0; i < 26; i++) {
-            if (rosco[i][3].equals("1")) {
+            if (rosco[i][3].equals("1")){
                 aciertos++;
-            } else if (rosco[i][3].equals("2")) {
+            }
+            else if (rosco[i][3].equals("2")){
                 fallos++;
-            } else if (rosco[i][3].equals("3")) {
+            }
+            else if (rosco[i][3].equals("3")){
                 pasapalabras++;
             }
         }
 
-        System.out.println("===== RESULTADO FINAL =====");
-        System.out.println("Aciertos: " + aciertos);
-        System.out.println("Fallos: " + fallos);
-        System.out.println("Pasapalabras:" +pasapalabras);
+        return new int[]{aciertos, fallos, pasapalabras};
     }
 
-    //PERSONA 1
     //GUARDAR PARTIDA
     public static void guardarDatosPartida(String nombreFichero, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
         try {
