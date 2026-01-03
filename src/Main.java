@@ -5,6 +5,7 @@ import java.util.Random;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.BufferedWriter;
+import java.io.File;
 
 
 
@@ -281,25 +282,25 @@ public class Main {
                 String linea = file.nextLine();
                 String []datos = linea.split(";");
 
-                System.out.println("Corre:"+ datos[0]+n/
-                        "Aciertos: "+ datos[i]+n/
+                System.out.println("Correo:"+ datos[0]+n/
+                        "Aciertos: "+ datos[1]+n/
                         "Fallos: "+ datos[2]+n/
                         "Pasapalabras: "+ datos[3]+n/
                         "Nivel: "+ datos[4]);
             }
             file.close();
         }
-        catch (fileNotFoundException e){
+        catch (FileNotFoundException e){
             System.out.println("No hay estadisticas registradas");
         }
     }
 
-    public static void mejorPuntaje(String nombrefichero){
+    public static void mejorPuntaje(String nombreFichero){
         int mejor=0;
 
         try{
             Scanner file= new Scanner(new File(nombreFichero));
-            while(file.hastNextLine()){
+            while(file.hasNextLine()){
                 String []datos = file.nextLine().split(";");
                 int aciertos = Integer.parseInt(datos[1]);
 
