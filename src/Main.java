@@ -271,5 +271,107 @@ public class Main {
             System.out.println ("Error al escribir el fichero");
         }
     }
+    public static void historialPartida (String nombreFichero){
+        try{
+            Scanner file = new Scanner (new File(nombreFichero));
+
+            System.out.println("Historial de partidas");
+
+            while(file.hasNextLine()){
+                String linea = file.nextLine();
+                String []datos = linea.split(";");
+
+                System.out.println("Corre:"+ datos[0]+n/
+                        "Aciertos: "+ datos[i]+n/
+                        "Fallos: "+ datos[2]+n/
+                        "Pasapalabras: "+ datos[3]+n/
+                        "Nivel: "+ datos[4]);
+            }
+            file.close();
+        }
+        catch (fileNotFoundException e){
+            System.out.println("No hay estadisticas registradas");
+        }
+    }
+
+    public static void mejorPuntaje(String nombrefichero){
+        int mejor=0;
+
+        try{
+            Scanner file= new Scanner(new File(nombreFichero));
+            while(file.hastNextLine()){
+                String []datos = file.nextLine().split(";");
+                int aciertos = Integer.parseInt(datos[1]);
+
+
+                if(aciertos> mejor){
+                    mejor = aciertos;
+                }
+            }
+
+            file.close();
+            System.out.println("Mejor puntuacion registrada: "+ mejor + "aciertos");
+        }
+        catch(Exception e){
+            System.out.println("Error al leer las estadisticas");
+        }
+    }
+    public static void partidasPorNivel(String nombreFichero){
+        int infantil =0;
+        int facil=0;
+        int medio=0;
+        int avanzado=0;
+
+
+        try{
+            Scanner file = new Scanner(new File(nombreFichero));
+
+            while(file.hasNextLine()){
+
+                String[]datos = file.nextLine().split(";");
+
+                String nivel = datos[4].toLowerCase();
+
+                if(nivel.equals("infantil")){
+                    infantil++;
+                }
+                else if(nivel.equals("facil")){
+                    facil++;
+                }
+                else if(nivel.equals("medio")){
+                    medio++;
+                }
+                else if(nivel.equals("avanzado")){
+                    avanzado++;
+                }
+
+            }
+            file.close();
+
+
+            System.out.println("Partidas por nivel: ");
+            System.out.println("Infantil: "+ infantil);
+            System.out.println("Facil: "+ facil);
+            System.out.println("Medio: "+ medio);
+            System.out.println("Avanzado: "+ avanzado);
+        }
+        catch(Exception e){
+            System.out.println("Error al leer el fichero de estadisticas");
+        }
+    }
+
+
+
+
+    // ESTO CREO QUE ES AL FINAL DEL JUEGO LO DE PREGUNTAR AL USUARIO SI DESEA VER LAS ESTADISTICAS
+    //System.out.println("¿Desea ver las estadísticas? (s/n)");
+    //String opcion = in.nextLine();
+
+//if (opcion.equalsIgnoreCase("s")) {
+       // Estadisticas.mostrarhistorialPartida("data/marcadorUsuario.txt");
+        //Estadisticas.mostrarmejorPuntaje("data/marcadorUsuario.txt");
+       // Estadisticas.mostrarpartidasPorNivel("data/marcadorUsuario.txt");
+    }
+
 }
 
