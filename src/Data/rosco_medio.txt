@@ -44,7 +44,7 @@ K;Unidad de medida informática;Kilobyte;0
 K;Unidad de medida de energía;Kilojulio;0
 L;Lugar destinado a la lectura pública;Librería;0
 L;Acción de leer atentamente;Lectura;0
-L;Capacidad de liderazgo;Liderazgo;0
+L;Cualidad que tiene un Líder;Liderazgo;0
 L;Acción de hacer un lazo;Lazar;0
 M;Estado de calma y serenidad;Mesura;0
 M;Movimiento repetido y constante;Monotonía;0

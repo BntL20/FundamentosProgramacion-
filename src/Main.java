@@ -1,12 +1,6 @@
+import java.io.*;
 import java.util.Scanner;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Random;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.BufferedWriter;
-import java.io.File;
-
 
 
 public class Main {
@@ -29,13 +23,17 @@ public class Main {
 
         //Lógica del juego
         jugarRosco(rosco);
-        mostrarResultados(rosco);
 
         //Guardar resultados del usuario
         int[] r = calcularResultados(rosco);
         mostrarResultados(rosco);
 
         guardarDatosPartida("src/Data/MarcadorUsuario.txt", usuarioActual.correo, r[0], r[1], r[2], nivel);
+
+        String estadísticas = "src/Data/MarcadorUsuario.txt";
+        historialPartida(estadísticas);
+        mejorPuntaje(estadísticas);
+        partidasPorNivel(estadísticas);
 
     }
 
@@ -216,8 +214,7 @@ public class Main {
             }
         }
     }
-
-    //RECORRE TODO EL ROSCO PARA SABER SI HAY PASAPALABRA O NO
+    //Recorre todo el rosco para saber si hay pasapalabras
     public static boolean hayPasapalabras(String[][] rosco) {
         for (int i = 0; i < 26; i++) {
             if (rosco[i][3].equals("3")) {
@@ -227,7 +224,7 @@ public class Main {
         return false;
     }
 
-    //UN PRINT DE LOS RESULTADOS
+    //MOSTRAR RESULTADOS
     public static void mostrarResultados(String[][] rosco) {
         int[] r = calcularResultados(rosco);
 
@@ -253,7 +250,6 @@ public class Main {
                 pasapalabras++;
             }
         }
-
         return new int[]{aciertos, fallos, pasapalabras};
     }
 
@@ -272,21 +268,24 @@ public class Main {
             System.out.println ("Error al escribir el fichero");
         }
     }
+
+    //ESTADISTICAS FINALES DEL JUEGO
     public static void historialPartida (String nombreFichero){
+        System.out.println("=====ESTADÍSTICAS=====");
         try{
             Scanner file = new Scanner (new File(nombreFichero));
-
-            System.out.println("Historial de partidas");
+            System.out.println("==Historial de partidas==");
 
             while(file.hasNextLine()){
                 String linea = file.nextLine();
                 String []datos = linea.split(";");
 
-                System.out.println("Correo:"+ datos[0]+n/
-                        "Aciertos: "+ datos[1]+n/
-                        "Fallos: "+ datos[2]+n/
-                        "Pasapalabras: "+ datos[3]+n/
-                        "Nivel: "+ datos[4]);
+                System.out.println("Correo: " + datos[0] + "\n" +
+                        "Aciertos: " + datos[1] + "\n" +
+                        "Fallos: " + datos[2] + "\n" +
+                        "Pasapalabras: " + datos[3] + "\n" +
+                        "Nivel: " + datos[4]);
+                System.out.println("---------------------------------");
             }
             file.close();
         }
@@ -296,7 +295,7 @@ public class Main {
     }
 
     public static void mejorPuntaje(String nombreFichero){
-        int mejor=0;
+        int mejor = 0;
 
         try{
             Scanner file= new Scanner(new File(nombreFichero));
@@ -305,32 +304,30 @@ public class Main {
                 int aciertos = Integer.parseInt(datos[1]);
 
 
-                if(aciertos> mejor){
+                if(aciertos > mejor){
                     mejor = aciertos;
                 }
             }
 
             file.close();
-            System.out.println("Mejor puntuacion registrada: "+ mejor + "aciertos");
+            System.out.println("---Mejor puntuacion registrada: "+ mejor + " aciertos---");
         }
         catch(Exception e){
             System.out.println("Error al leer las estadisticas");
         }
     }
+
+
     public static void partidasPorNivel(String nombreFichero){
         int infantil =0;
         int facil=0;
         int medio=0;
         int avanzado=0;
 
-
         try{
             Scanner file = new Scanner(new File(nombreFichero));
-
             while(file.hasNextLine()){
-
                 String[]datos = file.nextLine().split(";");
-
                 String nivel = datos[4].toLowerCase();
 
                 if(nivel.equals("infantil")){
@@ -349,8 +346,7 @@ public class Main {
             }
             file.close();
 
-
-            System.out.println("Partidas por nivel: ");
+            System.out.println("==Partidas por nivel==");
             System.out.println("Infantil: "+ infantil);
             System.out.println("Facil: "+ facil);
             System.out.println("Medio: "+ medio);
@@ -374,5 +370,5 @@ public class Main {
        // Estadisticas.mostrarpartidasPorNivel("data/marcadorUsuario.txt");
     }
 
-}
+
 
