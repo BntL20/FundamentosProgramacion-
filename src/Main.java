@@ -28,7 +28,7 @@ public class Main {
             //Guardar Resultados
             guardarDatosPartida("src/Data/MarcadorUsuario.txt", usuarioActual.correo, r[0], r[1], r[2], nivel);
 
-            // 7. Ver estadísticas
+            //Ver estadísticas
             char verEst;
             do {
                 System.out.print("¿Quieres ver las estadísticas generales? (s/n): ");
@@ -42,7 +42,7 @@ public class Main {
                 partidasPorNivel(fichero);
             }
 
-            // 8. Jugar otra vez
+            //Jugar otra vez
             do {
                 System.out.print("¿Deseas jugar otra vez? (s/n): ");
                 jugarOtra = sc.nextLine().toLowerCase().charAt(0);
