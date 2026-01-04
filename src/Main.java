@@ -1,45 +1,63 @@
 import java.io.*;
 import java.util.Scanner;
-import java.util.Random;
 
 
 public class Main {
-    static Usuario[] usuarios = new Usuario[10];
-    static int numUsuarios = 0;
-
     public static void main(String[] args) {
-        //Carga usuarios existentes desde la matriz
-        //leerUsuarios();
+        Scanner sc = new Scanner(System.in);
 
-        //Registrar o identificar usuario
-        Usuario usuarioActual = registrarUsuario();
+        char jugarOtra = 0;
+        do {
+            //Registrar o identificar usuario
+            Usuario usuarioActual = RegistraroIdentificarUsuario();
 
-        //Elegir nivel (devuelve directamente el fichero)
-        String nivel = elegirNivel();
-        String nombreFichero = obtenerFicheroNivel(nivel);
+            //Elegir nivel
+            String nivel = elegirNivel();
+            String nombreFichero = obtenerFicheroNivel(nivel);
 
-        //Cargar datos del rosco según el nivel
-        String[][] rosco = cargarDatos(nombreFichero);
+            //Cargar datos del rosco según el nivel
+            String[][] rosco = cargarDatos(nombreFichero);
 
-        //Lógica del juego
-        jugarRosco(rosco);
+            //Lógica del juego
+            jugarRosco(rosco);
 
-        //Guardar resultados del usuario
-        int[] r = calcularResultados(rosco);
-        mostrarResultados(rosco);
+            //Resultados
+            int[] r = calcularResultados(rosco);
+            mostrarResultados(rosco);
 
-        guardarDatosPartida("src/Data/MarcadorUsuario.txt", usuarioActual.correo, r[0], r[1], r[2], nivel);
+            //Guardar Resultados
+            guardarDatosPartida("src/Data/MarcadorUsuario.txt", usuarioActual.correo, r[0], r[1], r[2], nivel);
 
-        String estadísticas = "src/Data/MarcadorUsuario.txt";
-        historialPartida(estadísticas);
-        mejorPuntaje(estadísticas);
-        partidasPorNivel(estadísticas);
+            // 7. Ver estadísticas
+            char verEst;
+            do {
+                System.out.print("¿Quieres ver las estadísticas generales? (s/n): ");
+                verEst = sc.nextLine().toLowerCase().charAt(0);
+            } while (verEst != 's' && verEst != 'n');
 
+            if (verEst == 's') {
+                String fichero = "src/Data/MarcadorUsuario.txt";
+                historialPartida(fichero);
+                mejorPuntaje(fichero);
+                partidasPorNivel(fichero);
+            }
+
+            // 8. Jugar otra vez
+            do {
+                System.out.print("¿Deseas jugar otra vez? (s/n): ");
+                jugarOtra = sc.nextLine().toLowerCase().charAt(0);
+            } while (jugarOtra != 's' && jugarOtra != 'n');
+
+        } while (jugarOtra == 's');
+
+        System.out.println("GRACIAS POR JUGAR. HASTA LUEGO!");
     }
 
-    //REGISTRO DE USUARIOS
-    public static Usuario registrarUsuario(){
+    //REGISTRO Y RECONOCIMIENTO DE USUARIOS
+    public static Usuario RegistraroIdentificarUsuario() {
         Scanner sc = new Scanner(System.in);
+
+        // Pedir datos al usuario, independientemente si el usuario exista o no
         System.out.print("Introduce nombre: ");
         String nombre = sc.nextLine();
 
@@ -47,10 +65,11 @@ public class Main {
         do {
             System.out.print("Introduce edad: ");
             edad = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine(); // Limpiar buffer
 
+            // Validación de edad
             if (edad <= 0) {
-                System.err.println("Error: La edad debe ser > 0");
+                System.out.println("La edad debe ser mayor que 0.");
             }
         } while (edad <= 0);
 
@@ -59,38 +78,51 @@ public class Main {
             System.out.print("Introduce correo: ");
             correo = sc.nextLine();
 
+            // Validación del correo electrónico
             if (!correo.contains("@")) {
-                System.out.println("Error: el correo debe contener '@'.");
+                System.out.println("El correo debe contener '@'.");
             }
         } while (!correo.contains("@"));
 
-        // ===== BUSCAR USUARIO EXISTENTE =====
-        for (int i = 0; i < numUsuarios; i++) {
-            if (usuarios[i].correo.equalsIgnoreCase(correo)) {
-                System.out.println("Usuario encontrado. Bienvenido de nuevo.");
-                return usuarios[i];
+        //Comprobamos si el usuario existe usando su correo
+        boolean existe = false;
+        try {
+            File fichero = new File("src/Data/MarcadorUsuario.txt");
+            if (fichero.exists()) { //si el fichero existe se lee
+                Scanner file = new Scanner(fichero);
+                while (file.hasNextLine()) { // Se recorre el fichero línea a línea
+                    String linea = file.nextLine();
+                    String[] datos = linea.split(";"); //los datos spliteados se guardan en un array
+                    if (datos[0].equalsIgnoreCase(correo)) { // datos[0] contiene el correo que se ha guardado en el fichero
+                        existe = true;
+                        break; // Se deja de buscar porque ya se ha encontrado
+                    }
+                }
+                file.close();
             }
+        } catch (Exception e) {
+            System.out.println("Error al leer el fichero de usuarios.");
         }
 
-        // ===== CREAR NUEVO USUARIO =====
-        Usuario nuevoUsuario = new Usuario(nombre, edad, correo);
-        usuarios[numUsuarios] = nuevoUsuario;
-        numUsuarios++;
+        //Mensajes que se le da al usuario
+        if (existe) { //si existe, reconoce al usuario
+            System.out.println("Usuario reconocido. Bienvenido de nuevo " +nombre+ "!");
+        } else {
+            System.out.println("Usuario nuevo. Bienvenido a 'Juguemos al pasapalabras'");
+        }
 
-        System.out.println("Usuario registrado correctamente.");
-
-        return nuevoUsuario;
+        return new Usuario(nombre, edad, correo);
     }
 
     //ELECCIÓN DE NIVEL
     public static String elegirNivel(){
         Scanner sc = new Scanner(System.in);
         String nivel;
-        do {
+        do { //validamos que el usuario escoja un nivel
             System.out.println("Elige nivel: infantil / facil / medio / avanzado");
             nivel = sc.nextLine().toLowerCase();
 
-            if(!nivel.equals("infantil") && !nivel.equals("facil") && !nivel.equals("medio") && !nivel.equals("avanzado")){
+            if(!nivel.equals("infantil") && !nivel.equals("facil") && !nivel.equals("medio") && !nivel.equals("avanzado")){ //damos el mensaje que escoja un nivel correcto
                 System.out.println("Error de elección de nivel. Coloque uno de los niveles indicados");
             }
         }while (!nivel.equals("infantil") && !nivel.equals("facil") && !nivel.equals("medio") && !nivel.equals("avanzado"));
@@ -98,6 +130,7 @@ public class Main {
         return nivel;
     }
 
+    //DEVUELVE EL FICHERO CON EL NIVEL ELEGIDO
     public static String obtenerFicheroNivel(String nivel){
         return "src/Data/rosco_"+nivel+".txt";
     }
@@ -172,24 +205,24 @@ public class Main {
 
         //PRIMERA VUELTA (donde se hacen las preguntas)
         for (int i = 0; i < 26; i++) {
-            //Solo preguntas no planteadas (recuerden que: 0 = no preguntadas, 1 = correctas, 2 = incorrectas, 3 = pasapalabra
-            if (rosco[i][3].equals("0")) {
+            if (rosco[i][3].equals("0")) { //Solo preguntas no planteadas (0)
                 System.out.println("Letra " + rosco[i][0] + ":" + rosco[i][1]);
                 respuesta = sc.nextLine().trim();
-                if (respuesta.equalsIgnoreCase("pasapalabra")) {
-                    rosco[i][3] = "3";
-                } else if (respuesta.equalsIgnoreCase(rosco[i][2])) {
-                    rosco[i][3] = "1";
+                if (respuesta.equalsIgnoreCase("pasapalabra")) { //si la respuesta fue pasapalabra
+                    rosco[i][3] = "3"; //se rellena con 3 = pasapalabra
+                } else if (respuesta.equalsIgnoreCase(rosco[i][2])) { //si la respuesta es igual a la respuesta correcta
+                    rosco[i][3] = "1"; //se rellena con 1 = correcta
                     System.out.println("Correcto");
                 } else {
-                    rosco[i][3] = "2";
+                    rosco[i][3] = "2";//se rellena con 2 = incorrecta
                     System.out.println("Incorrecto");
                 }
             }
         }
 
+
         //SEGUNDA VUELTA (aquí se hacen las preguntas donde se respondieron "pasapalabra")
-        if (hayPasapalabras(rosco)) {
+        if (hayPasapalabras(rosco)) { //si hay
             System.out.print("¿Desea continuar con las preguntas pendientes? (s/n): ");
             continuar = sc.nextLine().toLowerCase().charAt(0);
 
@@ -197,7 +230,7 @@ public class Main {
                 for (int i = 0; i < 26; i++) {
                     if (rosco[i][3].equals("3")) {
                         System.out.println("Letra " + rosco[i][0] + ": " + rosco[i][1]);
-                        respuesta = sc.nextLine();
+                        respuesta = sc.nextLine().trim();
 
                         if (respuesta.equalsIgnoreCase("pasapalabra")) {
                             //sigue siendo pasapalabra
@@ -214,6 +247,7 @@ public class Main {
             }
         }
     }
+
     //Recorre todo el rosco para saber si hay pasapalabras
     public static boolean hayPasapalabras(String[][] rosco) {
         for (int i = 0; i < 26; i++) {
@@ -224,7 +258,7 @@ public class Main {
         return false;
     }
 
-    //MOSTRAR RESULTADOS
+    //MOSTRAR RESULTADOS (reutilizando los datos de calcularResultados)
     public static void mostrarResultados(String[][] rosco) {
         int[] r = calcularResultados(rosco);
 
@@ -234,6 +268,7 @@ public class Main {
         System.out.println("Pasapalabras: " + r[2]);
     }
 
+    //CALCULAR RESULTADOS
     public static int[] calcularResultados(String[][] rosco) {
         int aciertos = 0;
         int fallos = 0;
@@ -257,11 +292,9 @@ public class Main {
     public static void guardarDatosPartida(String nombreFichero, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
         try {
             BufferedWriter bw = new BufferedWriter (new FileWriter (nombreFichero, true));
-
             bw.write (correoUsuario + ";" + aciertos + ";" + fallos + ";" + pasapalabras + ";" + nivel);
             bw.newLine();
 
-            bw.close();
         }
 
         catch (IOException e){
@@ -280,11 +313,11 @@ public class Main {
                 String linea = file.nextLine();
                 String []datos = linea.split(";");
 
-                System.out.println("Correo: " + datos[0] + "\n" +
-                        "Aciertos: " + datos[1] + "\n" +
-                        "Fallos: " + datos[2] + "\n" +
-                        "Pasapalabras: " + datos[3] + "\n" +
-                        "Nivel: " + datos[4]);
+                System.out.println("Correo: " + datos[0]);
+                System.out.println("Aciertos: " + datos[1]);
+                System.out.println("Fallos: " + datos[2]);
+                System.out.println("Pasapalabras: " + datos[3]);
+                System.out.println("Nivel: " + datos[4]);
                 System.out.println("---------------------------------");
             }
             file.close();
@@ -302,7 +335,6 @@ public class Main {
             while(file.hasNextLine()){
                 String []datos = file.nextLine().split(";");
                 int aciertos = Integer.parseInt(datos[1]);
-
 
                 if(aciertos > mejor){
                     mejor = aciertos;
@@ -342,7 +374,6 @@ public class Main {
                 else if(nivel.equals("avanzado")){
                     avanzado++;
                 }
-
             }
             file.close();
 
@@ -356,19 +387,4 @@ public class Main {
             System.out.println("Error al leer el fichero de estadisticas");
         }
     }
-
-
-
-
-    // ESTO CREO QUE ES AL FINAL DEL JUEGO LO DE PREGUNTAR AL USUARIO SI DESEA VER LAS ESTADISTICAS
-    //System.out.println("¿Desea ver las estadísticas? (s/n)");
-    //String opcion = in.nextLine();
-
-//if (opcion.equalsIgnoreCase("s")) {
-       // Estadisticas.mostrarhistorialPartida("data/marcadorUsuario.txt");
-        //Estadisticas.mostrarmejorPuntaje("data/marcadorUsuario.txt");
-       // Estadisticas.mostrarpartidasPorNivel("data/marcadorUsuario.txt");
-    }
-
-
-
+}
