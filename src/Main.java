@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        char jugarOtra = 0;
+        char jugarOtra;
         do {
             //Registrar o identificar usuario
             Usuario usuarioActual = RegistraroIdentificarUsuario();
@@ -138,7 +138,7 @@ public class Main {
     //CARGAR DATOS
     public static String[][] cargarDatos(String nombreFichero){ //Función que carga los ficheros en el programa para poder trabajar con ellos
 
-        String [] [] rosco = new String [26][4]; //matriz que guarda la letra,la pregunta,la respuesta y el estado.
+        String [] [] rosco = new String [26][4]; //matriz que guarda la letra, la pregunta, la respuesta y el estado.
 
         //Inicializamos el estado de las preguntas para que siempre empiecen en 0
         for (int i = 0;i<26;i++){
