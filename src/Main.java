@@ -61,19 +61,25 @@ public class Main {
         System.out.print("Introduce nombre: ");
         String nombre = sc.nextLine();
 
+        //Pedimos la edad
         int edad;
+        //Pedimos el correo
+        String correo;
+        //Comprobamos si el usuario existe usando su correo
+        boolean existe = false;
+
+        //verificamos la edad sea correcta
         do {
             System.out.print("Introduce edad: ");
             edad = sc.nextInt();
             sc.nextLine(); // Limpiar buffer
 
-            // Validación de edad
             if (edad <= 0) {
                 System.out.println("La edad debe ser mayor que 0.");
             }
         } while (edad <= 0);
 
-        String correo;
+        //Verificamos el correo que sea correcto
         do {
             System.out.print("Introduce correo: ");
             correo = sc.nextLine();
@@ -84,8 +90,7 @@ public class Main {
             }
         } while (!correo.contains("@"));
 
-        //Comprobamos si el usuario existe usando su correo
-        boolean existe = false;
+        //Abrimos el fichero de los marcadores de los Usuarios y verificamos si ese Usuario existe o no (jugo o no)
         try {
             File fichero = new File("src/Data/MarcadorUsuario.txt");
             if (fichero.exists()) { //si el fichero existe se lee
@@ -107,7 +112,7 @@ public class Main {
         //Mensajes que se le da al usuario
         if (existe) { //si existe, reconoce al usuario
             System.out.println("Usuario reconocido. Bienvenido de nuevo " +nombre+ "!");
-        } else {
+        } else { //si no existe, identificamos como nuevo usuario
             System.out.println("Usuario nuevo. Bienvenido a 'Juguemos al pasapalabras'");
         }
 
@@ -294,12 +299,14 @@ public class Main {
             BufferedWriter bw = new BufferedWriter (new FileWriter (nombreFichero, true));
             bw.write (correoUsuario + ";" + aciertos + ";" + fallos + ";" + pasapalabras + ";" + nivel);
             bw.newLine();
-
+            bw.close();
+            System.out.println("Partida guardada");
         }
 
         catch (IOException e){
             System.out.println ("Error al escribir el fichero");
         }
+
     }
 
     //ESTADISTICAS FINALES DEL JUEGO
