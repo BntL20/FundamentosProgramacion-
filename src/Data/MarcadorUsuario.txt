@@ -1,3 +1,4 @@
 eddybrent10@gmail.com;19;7;0;facil
 carlito123@gmail.com;13;12;1;medio
 quesitos333@hotmail.com;0;25;1;avanzado
+danna@gmail.com;0;26;0;infantil

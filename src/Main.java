@@ -309,6 +309,9 @@ public class Main {
 
     }
 
+    /**
+     * @param nombreFichero
+     */
     //ESTADISTICAS FINALES DEL JUEGO
     public static void historialPartida (String nombreFichero){
         System.out.println("=====ESTADÍSTICAS=====");
@@ -334,6 +337,12 @@ public class Main {
         }
     }
 
+    /**
+     *
+     * Calcula y muestra la mejor puntuación registrada a partir de los datos almacenados en el fichero
+     *
+     * @param nombreFichero
+     */
     public static void mejorPuntaje(String nombreFichero){
         int mejor = 0;
 
@@ -356,6 +365,12 @@ public class Main {
         }
     }
 
+    /**
+     * Cuenta cuántas partidas se han jugado en cada nivel y muestra el resultado por pantalla
+     *
+     *
+     * @param nombreFichero
+     */
 
     public static void partidasPorNivel(String nombreFichero){
         int infantil =0;
