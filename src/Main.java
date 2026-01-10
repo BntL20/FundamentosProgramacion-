@@ -316,23 +316,24 @@ public class Main {
     public static void historialPartida (String nombreFichero){
         System.out.println("=====ESTADÍSTICAS=====");
         try{
-            Scanner file = new Scanner (new File(nombreFichero));
+            Scanner file = new Scanner (new File(nombreFichero)); // Crea un Scanner para leer el fichero indicado
             System.out.println("==Historial de partidas==");
 
-            while(file.hasNextLine()){
+            while(file.hasNextLine()){  // Mientras existan líneas por leer en el fichero
                 String linea = file.nextLine();
-                String []datos = linea.split(";");
+                String []datos = linea.split(";");// Divide la línea en partes usando ';' como separador
 
-                System.out.println("Correo: " + datos[0]);
-                System.out.println("Aciertos: " + datos[1]);
-                System.out.println("Fallos: " + datos[2]);
-                System.out.println("Pasapalabras: " + datos[3]);
-                System.out.println("Nivel: " + datos[4]);
+                System.out.println("Correo: " + datos[0]);  // Muestra el correo del jugador
+                System.out.println("Aciertos: " + datos[1]); // Muestra el número de aciertos
+                System.out.println("Fallos: " + datos[2]); // Muestra el número de fallos
+                System.out.println("Pasapalabras: " + datos[3]);// Muestra el número de pasapalabras
+                System.out.println("Nivel: " + datos[4]);// Muestra el nivel jugado
                 System.out.println("---------------------------------");
             }
             file.close();
         }
         catch (FileNotFoundException e){
+            // Mensaje si el fichero no existe o no se puede abrir
             System.out.println("No hay estadisticas registradas");
         }
     }
@@ -344,24 +345,24 @@ public class Main {
      * @param nombreFichero
      */
     public static void mejorPuntaje(String nombreFichero){
-        int mejor = 0;
+        int mejor = 0;  // Variable para guardar la mejor puntuación encontrada
 
         try{
-            Scanner file= new Scanner(new File(nombreFichero));
-            while(file.hasNextLine()){
-                String []datos = file.nextLine().split(";");
-                int aciertos = Integer.parseInt(datos[1]);
+            Scanner file= new Scanner(new File(nombreFichero)); // Crea un Scanner para leer el fichero
+            while(file.hasNextLine()){   // Recorre todas las líneas del fichero
+                String []datos = file.nextLine().split(";");// Divide la línea en datos usando ';'
+                int aciertos = Integer.parseInt(datos[1]);// Convierte el número de aciertos a entero
 
-                if(aciertos > mejor){
+                if(aciertos > mejor){  // Comprueba si la puntuación actual es mayor que la mejor
                     mejor = aciertos;
                 }
             }
 
             file.close();
-            System.out.println("---Mejor puntuacion registrada: "+ mejor + " aciertos---");
+            System.out.println("---Mejor puntuacion registrada: "+ mejor + " aciertos---");// Muestra la mejor puntuación encontrada
         }
         catch(Exception e){
-            System.out.println("Error al leer las estadisticas");
+            System.out.println("Error al leer las estadisticas"); // Mensaje de error si ocurre algún problema al leer el fichero
         }
     }
 
@@ -373,17 +374,19 @@ public class Main {
      */
 
     public static void partidasPorNivel(String nombreFichero){
+        // Contadores para cada nivel de dificultad
         int infantil =0;
         int facil=0;
         int medio=0;
         int avanzado=0;
 
         try{
-            Scanner file = new Scanner(new File(nombreFichero));
-            while(file.hasNextLine()){
-                String[]datos = file.nextLine().split(";");
-                String nivel = datos[4].toLowerCase();
+            Scanner file = new Scanner(new File(nombreFichero)); // Abre el fichero con un Scanner
+            while(file.hasNextLine()){  // Recorre todas las líneas del fichero
+                String[]datos = file.nextLine().split(";");  // Divide la línea en partes
+                String nivel = datos[4].toLowerCase();// Obtiene el nivel y lo pasa a minúsculas
 
+                // Incrementa el contador según el nivel
                 if(nivel.equals("infantil")){
                     infantil++;
                 }
@@ -399,6 +402,7 @@ public class Main {
             }
             file.close();
 
+            // Muestra las estadísticas por nivel
             System.out.println("==Partidas por nivel==");
             System.out.println("Infantil: "+ infantil);
             System.out.println("Facil: "+ facil);
@@ -406,6 +410,7 @@ public class Main {
             System.out.println("Avanzado: "+ avanzado);
         }
         catch(Exception e){
+            // Mensaje de error si falla al leer el fichero
             System.out.println("Error al leer el fichero de estadisticas");
         }
     }
