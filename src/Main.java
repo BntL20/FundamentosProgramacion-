@@ -13,7 +13,7 @@ public class Main {
 
             //Elegir nivel
             String nivel = elegirNivel();
-            String nombreFichero = obtenerFicheroNivel(nivel);
+            String nombreFichero = obtenerFicheroNivel(nivel); //rosco
 
             //Cargar datos del rosco según el nivel
             String[][] rosco = cargarDatos(nombreFichero);
@@ -25,8 +25,10 @@ public class Main {
             int[] r = calcularResultados(rosco);
             mostrarResultados(rosco);
 
+            String NombreGuardar = "src/Data/MarcadorUsuario.txt";
+
             //Guardar Resultados
-            guardarDatosPartida("src/Data/MarcadorUsuario.txt", usuarioActual.correo, r[0], r[1], r[2], nivel);
+            guardarDatosPartida(NombreGuardar, usuarioActual.correo, r[0], r[1], r[2], nivel);
 
             //Ver estadísticas
             char verEst;
@@ -36,10 +38,9 @@ public class Main {
             } while (verEst != 's' && verEst != 'n');
 
             if (verEst == 's') {
-                String fichero = "src/Data/MarcadorUsuario.txt";
-                historialPartida(fichero);
-                mejorPuntaje(fichero);
-                partidasPorNivel(fichero);
+                historialPartida(NombreGuardar);
+                mejorPuntaje(NombreGuardar);
+                partidasPorNivel(NombreGuardar);
             }
 
             //Jugar otra vez
@@ -150,8 +151,7 @@ public class Main {
     }
 
     /**
-     * Devuelve la ruta del fichero correspondiente al nivel elegido.
-     *
+     * Devuelve la ruta del fichero correspondiente al nivel elegido
      * @param nivel del juego
      * @return ruta del fichero asociado al nivel
      * @author Brent
@@ -161,10 +161,17 @@ public class Main {
         return "src/Data/rosco_"+nivel+".txt";
     }
 
-    //CARGAR DATOS
-    public static String[][] cargarDatos(String nombreFichero){ //Función que carga los ficheros en el programa para poder trabajar con ellos
 
-        String [] [] rosco = new String [26][4]; //matriz que guarda la letra, la pregunta, la respuesta y el estado.
+    /**
+     * Esta función carga los ficheros de los niveles en el programa para poder trabajar con ellos.
+     * @param nombreFichero fichero del nivel elegido por el usuario.
+     * @return devuelve el rosco completo y con las 26 preguntas elegidas.
+     * @author Sofia
+     */
+    //CARGAR DATOS
+    public static String[][] cargarDatos(String nombreFichero){
+
+        String [][] rosco = new String [26][4]; //matriz que guarda la letra, la pregunta, la respuesta y el estado.
 
         //Inicializamos el estado de las preguntas para que siempre empiecen en 0
         for (int i = 0;i<26;i++){
@@ -303,6 +310,7 @@ public class Main {
     /**
      * Un print de los resultados del rosco jugado, sacando los datos de un array
      * @param rosco recibe el rosco jugado, calcula los resultados y los imprime
+     * @author brent
      */
     //MOSTRAR RESULTADOS (reutilizando los datos de calcularResultados)
     public static void mostrarResultados(String[][] rosco) {
@@ -318,6 +326,7 @@ public class Main {
      * Calcula los resultados del rosco jugado en contadores de aciertos, fallos y pasapalabras, lo guarda en un array y lo retorna
      * @param rosco obtiene los datos necesarios del rosco jugado
      * @return un array con los contadores
+     * @author brent
      */
     //CALCULAR RESULTADOS
     public static int[] calcularResultados(String[][] rosco) {
@@ -339,10 +348,20 @@ public class Main {
         return new int[]{aciertos, fallos, pasapalabras};
     }
 
+    /**
+     * Esta función recibe el fichero MarcadorUsuario y escribe en él el correo, los aciertos, fallos, pasapalabras y el nivel.
+     * @param NombreGuardar fichero donde se va a escribir los datos del usuario
+     * @param correoUsuario correo que introduce el usuario
+     * @param aciertos preguntas respondidas correctamente
+     * @param fallos preguntas respondidas incorrectamente
+     * @param pasapalabras preguntas no respondidas
+     * @param nivel el nivel que ha elegido el usuario
+     * @author Sofia
+     */
     //GUARDAR PARTIDA
-    public static void guardarDatosPartida(String nombreFichero, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
+    public static void guardarDatosPartida(String NombreGuardar, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
         try {
-            BufferedWriter bw = new BufferedWriter (new FileWriter (nombreFichero, true));
+            BufferedWriter bw = new BufferedWriter (new FileWriter (NombreGuardar, true));
             bw.write (correoUsuario + ";" + aciertos + ";" + fallos + ";" + pasapalabras + ";" + nivel);
             bw.newLine();
             bw.close();
@@ -356,13 +375,17 @@ public class Main {
     }
 
     /**
-     * @param nombreFichero
+     *
+     * Muestra por pantalla el historial completo de partidas almacenado en un fichero
+     *
+     * @param fichero nombre del fichero donde se almacenan las estadisticas de las partidas
+     * @author danna
      */
     //ESTADISTICAS FINALES DEL JUEGO
-    public static void historialPartida (String nombreFichero){
+    public static void historialPartida (String fichero){
         System.out.println("=====ESTADÍSTICAS=====");
         try{
-            Scanner file = new Scanner (new File(nombreFichero)); // Crea un Scanner para leer el fichero indicado
+            Scanner file = new Scanner (new File(fichero)); // Crea un Scanner para leer el fichero indicado
             System.out.println("==Historial de partidas==");
 
             while(file.hasNextLine()){  // Mientras existan líneas por leer en el fichero
@@ -388,13 +411,14 @@ public class Main {
      *
      * Calcula y muestra la mejor puntuación registrada a partir de los datos almacenados en el fichero
      *
-     * @param nombreFichero
+     * @param fichero nombre del fichero donde se almacenan las estadisticas de las partidas
+     * @author danna
      */
-    public static void mejorPuntaje(String nombreFichero){
+    public static void mejorPuntaje(String fichero){
         int mejor = 0;  // Variable para guardar la mejor puntuación encontrada
 
         try{
-            Scanner file= new Scanner(new File(nombreFichero)); // Crea un Scanner para leer el fichero
+            Scanner file= new Scanner(new File(fichero)); // Crea un Scanner para leer el fichero
             while(file.hasNextLine()){   // Recorre todas las líneas del fichero
                 String []datos = file.nextLine().split(";");// Divide la línea en datos usando ';'
                 int aciertos = Integer.parseInt(datos[1]);// Convierte el número de aciertos a entero
@@ -416,7 +440,8 @@ public class Main {
      * Cuenta cuántas partidas se han jugado en cada nivel y muestra el resultado por pantalla
      *
      *
-     * @param nombreFichero
+     * @param nombreFichero nombre del fichero donde se almacenan las estadisticas de las partidas
+     * @author danna
      */
 
     public static void partidasPorNivel(String nombreFichero){
