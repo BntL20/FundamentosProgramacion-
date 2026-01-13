@@ -1,6 +1,14 @@
 import java.io.*;
 import java.util.Scanner;
 
+/**
+ * Este programa es un juego de Pasapalabra el cual el usuario puede registrarse y jugar el juego.
+ * Después de decidir que no quiere seguir jugando el programa le muestra las estadísticas de juego.
+ * @author Brent Delgado
+ * @author Danna González
+ * @author Sofia Peral
+ */
+
 
 public class Main {
     public static void main(String[] args) {
