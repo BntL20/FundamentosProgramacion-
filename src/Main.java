@@ -53,6 +53,13 @@ public class Main {
         System.out.println("GRACIAS POR JUGAR. HASTA LUEGO!");
     }
 
+    /**
+     * Esta función Registra los usuarios si no están registrados
+     * Y si el correo introducido coinciden con MarcadorUsuario.txt
+     * Print de Usuario reconocido o Usuario nuevo.
+     * @return un usuario nuevo
+     * @author Brent
+     */
     //REGISTRO Y RECONOCIMIENTO DE USUARIOS
     public static Usuario RegistraroIdentificarUsuario() {
         Scanner sc = new Scanner(System.in);
@@ -119,6 +126,13 @@ public class Main {
         return new Usuario(nombre, edad, correo);
     }
 
+    /**
+     * Solicita al usuario que elija un nivel válido y lo devuelve.
+     * La función no finaliza hasta que se introduce un nivel correcto.
+     *
+     * @return nivel elegido: infantil, facil, medio o avanzado
+     * @author Brent
+     */
     //ELECCIÓN DE NIVEL
     public static String elegirNivel(){
         Scanner sc = new Scanner(System.in);
@@ -135,6 +149,13 @@ public class Main {
         return nivel;
     }
 
+    /**
+     * Devuelve la ruta del fichero correspondiente al nivel elegido.
+     *
+     * @param nivel del juego
+     * @return ruta del fichero asociado al nivel
+     * @author Brent
+     */
     //DEVUELVE EL FICHERO CON EL NIVEL ELEGIDO
     public static String obtenerFicheroNivel(String nivel){
         return "src/Data/rosco_"+nivel+".txt";
@@ -202,6 +223,15 @@ public class Main {
         return rosco; //devolvemos la matriz completa y lista
     }
 
+    /**
+     * Ejecuta la lógica principal del juego.
+     * Realiza una primera ronda de preguntas y una segunda ronda para aquellas letras marcadas como "pasapalabra".
+     * El estado de cada letra se actualiza directamente en el array rosco.
+     *
+     * @param rosco array que contiene la letra, la pregunta, la respuesta correcta y el estado de cada posición del rosco
+     * @author Brent
+     */
+
     //LOGICA DEL JUEGO
     public static void jugarRosco(String[][] rosco) {
         Scanner sc = new Scanner(System.in);
@@ -253,6 +283,13 @@ public class Main {
         }
     }
 
+    /**
+     * Un booleano que retorna si hay pasapalabras al recorrer todas las preguntas del rosco
+     * @param rosco recorre el rosco
+     * @return si o no hay pasapalabras
+     * @author Brent
+     */
+
     //Recorre todo el rosco para saber si hay pasapalabras
     public static boolean hayPasapalabras(String[][] rosco) {
         for (int i = 0; i < 26; i++) {
@@ -263,6 +300,10 @@ public class Main {
         return false;
     }
 
+    /**
+     * Un print de los resultados del rosco jugado, sacando los datos de un array
+     * @param rosco recibe el rosco jugado, calcula los resultados y los imprime
+     */
     //MOSTRAR RESULTADOS (reutilizando los datos de calcularResultados)
     public static void mostrarResultados(String[][] rosco) {
         int[] r = calcularResultados(rosco);
@@ -273,6 +314,11 @@ public class Main {
         System.out.println("Pasapalabras: " + r[2]);
     }
 
+    /**
+     * Calcula los resultados del rosco jugado en contadores de aciertos, fallos y pasapalabras, lo guarda en un array y lo retorna
+     * @param rosco obtiene los datos necesarios del rosco jugado
+     * @return un array con los contadores
+     */
     //CALCULAR RESULTADOS
     public static int[] calcularResultados(String[][] rosco) {
         int aciertos = 0;
