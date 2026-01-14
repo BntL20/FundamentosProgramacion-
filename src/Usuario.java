@@ -1,4 +1,6 @@
-import java.util.Scanner;
+/**
+ * Representa un usuario en el juego
+ */
 public class Usuario {
     public String nombre;
     public int edad;

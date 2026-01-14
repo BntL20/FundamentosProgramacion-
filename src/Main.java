@@ -67,7 +67,6 @@ public class Main {
      * Y si el correo introducido coinciden con MarcadorUsuario.txt
      * Print de Usuario reconocido o Usuario nuevo.
      * @return un usuario nuevo
-     * @author Brent
      */
     //REGISTRO Y RECONOCIMIENTO DE USUARIOS
     public static Usuario RegistraroIdentificarUsuario() {
@@ -140,7 +139,6 @@ public class Main {
      * La función no finaliza hasta que se introduce un nivel correcto.
      *
      * @return nivel elegido: infantil, facil, medio o avanzado
-     * @author Brent
      */
     //ELECCIÓN DE NIVEL
     public static String elegirNivel(){
@@ -162,7 +160,6 @@ public class Main {
      * Devuelve la ruta del fichero correspondiente al nivel elegido
      * @param nivel del juego
      * @return ruta del fichero asociado al nivel
-     * @author Brent
      */
     //DEVUELVE EL FICHERO CON EL NIVEL ELEGIDO
     public static String obtenerFicheroNivel(String nivel){
@@ -174,7 +171,6 @@ public class Main {
      * Esta función carga los ficheros de los niveles en el programa para poder trabajar con ellos.
      * @param nombreFichero fichero del nivel elegido por el usuario.
      * @return devuelve el rosco completo y con las 26 preguntas elegidas.
-     * @author Sofia
      */
     //CARGAR DATOS
     public static String[][] cargarDatos(String nombreFichero){
@@ -244,7 +240,6 @@ public class Main {
      * El estado de cada letra se actualiza directamente en el array rosco.
      *
      * @param rosco array que contiene la letra, la pregunta, la respuesta correcta y el estado de cada posición del rosco
-     * @author Brent
      */
 
     //LOGICA DEL JUEGO
@@ -302,7 +297,6 @@ public class Main {
      * Un booleano que retorna si hay pasapalabras al recorrer todas las preguntas del rosco
      * @param rosco recorre el rosco
      * @return si o no hay pasapalabras
-     * @author Brent
      */
 
     //Recorre todo el rosco para saber si hay pasapalabras
@@ -318,7 +312,6 @@ public class Main {
     /**
      * Un print de los resultados del rosco jugado, sacando los datos de un array
      * @param rosco recibe el rosco jugado, calcula los resultados y los imprime
-     * @author brent
      */
     //MOSTRAR RESULTADOS (reutilizando los datos de calcularResultados)
     public static void mostrarResultados(String[][] rosco) {
@@ -334,7 +327,6 @@ public class Main {
      * Calcula los resultados del rosco jugado en contadores de aciertos, fallos y pasapalabras, lo guarda en un array y lo retorna
      * @param rosco obtiene los datos necesarios del rosco jugado
      * @return un array con los contadores
-     * @author brent
      */
     //CALCULAR RESULTADOS
     public static int[] calcularResultados(String[][] rosco) {
@@ -364,7 +356,6 @@ public class Main {
      * @param fallos preguntas respondidas incorrectamente
      * @param pasapalabras preguntas no respondidas
      * @param nivel el nivel que ha elegido el usuario
-     * @author Sofia
      */
     //GUARDAR PARTIDA
     public static void guardarDatosPartida(String NombreGuardar, String correoUsuario, int aciertos, int fallos, int pasapalabras, String nivel){
@@ -386,8 +377,7 @@ public class Main {
      *
      * Muestra por pantalla el historial completo de partidas almacenado en un fichero
      *
-     * @param fichero nombre del fichero donde se almacenan las estadisticas de las partidas
-     * @author danna
+     * @param fichero nombre del fichero donde se almacenan las estadísticas de las partidas
      */
     //ESTADISTICAS FINALES DEL JUEGO
     public static void historialPartida (String fichero){
@@ -420,7 +410,6 @@ public class Main {
      * Calcula y muestra la mejor puntuación registrada a partir de los datos almacenados en el fichero
      *
      * @param fichero nombre del fichero donde se almacenan las estadisticas de las partidas
-     * @author danna
      */
     public static void mejorPuntaje(String fichero){
         int mejor = 0;  // Variable para guardar la mejor puntuación encontrada
@@ -449,7 +438,6 @@ public class Main {
      *
      *
      * @param nombreFichero nombre del fichero donde se almacenan las estadisticas de las partidas
-     * @author danna
      */
 
     public static void partidasPorNivel(String nombreFichero){
